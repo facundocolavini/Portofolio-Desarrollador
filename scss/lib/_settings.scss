@@ -1,0 +1,34 @@
+
+
+/*------Colors---------*/
+$color-brand:          #353F47;
+$color-secondary:      #707070;
+$color-decoration:      #56507A ;
+
+$black:                rgb(0,0,0);
+$darkergrey:             lighten(black, 20%);
+$darkgrey:               lighten(black, 30%);
+$grey:                   lighten(black, 45%);
+$lightgrey:              lighten(black, 75%);
+$lightergrey:            lighten(black, 90%);
+$white:                  rgb(255,255,255);
+
+$color-borders:          $lightgrey;
+$color-footer: rgba(0, 0, 0, 0.904);
+$color-h-footer:#eeeeee;
+$color-btn-f:#56507a;
+
+/*------Font Definition------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+$basefont: 'Poppins', sans-serif;
+$color-h1: #1c1818;
+ 
+ 
+
+/*--------Constantes--------*/
+
+$h1: 60px;
+$h4: 40px;
+$h5: 30px

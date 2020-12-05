@@ -1,0 +1,26 @@
+
+/*------------------------------------*\
+    $PARTIALS
+\*------------------------------------*/
+/**
+ * All files to be compiled
+ */
+
+/**
+* Scss Libraries, mixins, functions and any Scss focused logic
+**/
+ 
+@import "lib/settings";
+
+/*Styleguide*/
+@import "styleguide/styleguide";
+
+/**
+* Componets used for layouts, headers, articles, etc...
+**/
+
+@import "components/header";
+@import "components/footer";
+@import "components/contact";
+
+@import "components/hero";

@@ -1,0 +1,71 @@
+.contact-links{
+    background:$color-footer;
+}
+
+/*Col de enlaces*/
+.links{
+    padding: 25px;
+    h3{
+        color:$color-h-footer;
+    }
+    &__nav{
+        list-style: none;
+        margin:5px;
+        padding: 0;
+        li{
+            padding: 5px;
+            a{
+                color:$color-h-footer;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*Col de contacto*/
+.contact{
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    h3{
+        padding: 5px;
+        color:$color-h-footer;
+        text-align: center;
+    }
+
+    
+    &__button{
+        text-transform: uppercase;
+        outline:none;
+
+        background-color: $color-btn-f;
+        font-family: $basefont;
+         
+        position: relative;
+        text-align: center;
+        border:0;
+        width: 150px;
+        padding-left:15px ;
+        height: 50px;
+        .email{
+            position: absolute;
+            text-align: center;
+            left: 10%;
+            
+            height: 25px;
+            width: 25px;
+            
+            background-image: url('/icons/mail.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    &__button:hover{
+        background-color:#56507a9e;
+        text-shadow: none;
+        outline:none;
+
+    }
+}
+
+

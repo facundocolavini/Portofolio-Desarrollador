@@ -1,0 +1,143 @@
+/*------------------------------------*\
+    $STYLE
+\*------------------------------------*/
+/**
+ * Let's define the settings file here, or the partials to be included.
+ * This way we can have different .css files compiled with different partials each.
+ */
+/*------------------------------------*\
+    $PARTIALS
+\*------------------------------------*/
+/**
+ * All files to be compiled
+ */
+/**
+* Scss Libraries, mixins, functions and any Scss focused logic
+**/
+/*------Colors---------*/
+/*------Font Definition------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*--------Constantes--------*/
+/*Styleguide*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+/**
+* Componets used for layouts, headers, articles, etc...
+**/
+.footer {
+  background: #d4e5e5;
+  padding: 2em 0;
+}
+.footer p {
+  padding: 2.5em 0;
+  font-size: 0.95em;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+.footer a {
+  text-decoration: underline;
+  color: #56507a;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.social {
+  display: flex;
+  padding: 2em 0;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.social li {
+  list-style: none;
+  margin: 0px auto;
+}
+.social li a {
+  height: 50px;
+  width: 50px;
+}
+.social li a img {
+  height: 50px;
+  width: 50px;
+}
+
+.contact-links {
+  background: rgba(0, 0, 0, 0.904);
+}
+
+/*Col de enlaces*/
+.links {
+  padding: 25px;
+}
+.links h3 {
+  color: #eeeeee;
+}
+.links__nav {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+.links__nav li {
+  padding: 5px;
+}
+.links__nav li a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+/*Col de contacto*/
+.contact {
+  padding: 25px;
+  position: relative;
+  text-align: center;
+}
+.contact h3 {
+  padding: 5px;
+  color: #eeeeee;
+  text-align: center;
+}
+.contact__button {
+  text-transform: uppercase;
+  outline: none;
+  background-color: #56507a;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  text-align: center;
+  border: 0;
+  width: 150px;
+  padding-left: 15px;
+  height: 50px;
+}
+.contact__button .email {
+  position: absolute;
+  text-align: center;
+  left: 10%;
+  height: 25px;
+  width: 25px;
+  background-image: url("/icons/mail.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contact__button:hover {
+  background-color: #56507a9e;
+  text-shadow: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
