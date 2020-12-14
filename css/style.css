@@ -87,13 +87,97 @@
     right: 50%;
   }
 }
+/*Tipografia para mobiles small to L*/
+@media (max-width: 399px) and (min-width: 300px) {
+  .design-description h3, .develop-description h3 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .design-description p, .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+/*Tipografia para Mobile small*/
+@media (max-width: 767px) and (min-width: 400px) {
+  .design-description h3, .develop-description h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.1em;
+    padding-top: 1.1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .design-description p, .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+/*Tablets*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .design-description h3, .develop-description h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .design-description p, .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.8;
+  }
+}
+/*Escritorio*/
+@media only screen and (min-width: 992px) {
+  .design-description h3, .develop-description h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    text-align: left;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .design-description p, .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 300;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
 @keyframes move-down {
   0% {
     background-position: 0 0;
   }
   5% {
     background-position: 0 77px;
-  }
+  } 
   35% {
     background-position: 0 77px;
   }
@@ -445,95 +529,6 @@ a:link, a:visited, a:active {
   object-fit: contain;
   background-size: cover;
 }
-.what-i-do .design .design-description {
-  /*Tipografia para mobiles small to L*/
-  /*Tipografia para Mobile small*/
-  /*Tablets*/
-  /*Escritorio*/
-}
-@media (max-width: 399px) and (min-width: 300px) {
-  .what-i-do .design .design-description h3 {
-    font-size: 1.5em;
-    padding-bottom: 1rem;
-    padding-top: 1em;
-    font-weight: 500;
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    color: #5c67a7;
-  }
-  .what-i-do .design .design-description p {
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 400;
-    color: #545454;
-    line-height: 1.7;
-  }
-}
-@media (max-width: 767px) and (min-width: 400px) {
-  .what-i-do .design .design-description h3 {
-    font-size: 1.5em;
-    padding-bottom: 0.1em;
-    padding-top: 1.1em;
-    font-weight: 500;
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    color: #5c67a7;
-  }
-  .what-i-do .design .design-description p {
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 400;
-    color: #545454;
-    line-height: 1.7;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .what-i-do .design .design-description h3 {
-    font-size: 1.8em;
-    padding-bottom: 0.1em;
-    padding-top: 1em;
-    font-weight: 500;
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    color: #5c67a7;
-  }
-  .what-i-do .design .design-description p {
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 400;
-    color: #545454;
-    line-height: 1.8;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .what-i-do .design .design-description h3 {
-    font-size: 1.8em;
-    padding-bottom: 0.1em;
-    text-align: left;
-    font-weight: 500;
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    color: #5c67a7;
-  }
-  .what-i-do .design .design-description p {
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.3em;
-    text-align: left;
-    font-weight: 300;
-    color: #545454;
-    line-height: 1.7;
-  }
-}
-.what-i-do .develop {
-  /*Mixins p y h segun sus breakpoints*/
-}
 .what-i-do .develop figure {
   max-width: 150px;
   width: 150px;
@@ -566,92 +561,6 @@ a:link, a:visited, a:active {
   background-image: url(/icons/dev-icons-vert.png);
   object-fit: contain;
   background-size: cover;
-}
-.what-i-do .develop .develop-description {
-  /*Tipografia para mobiles small to L*/
-  /*Tipografia para Mobile small*/
-  /*Tablets*/
-  /*Escritorio*/
-}
-@media (max-width: 399px) and (min-width: 300px) {
-  .what-i-do .develop .develop-description h3 {
-    font-size: 1.5em;
-    padding-bottom: 1rem;
-    padding-top: 1em;
-    font-weight: 500;
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    color: #5c67a7;
-  }
-  .what-i-do .develop .develop-description p {
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 400;
-    color: #545454;
-    line-height: 1.7;
-  }
-}
-@media (max-width: 767px) and (min-width: 400px) {
-  .what-i-do .develop .develop-description h3 {
-    font-size: 1.5em;
-    padding-bottom: 0.1em;
-    padding-top: 1.1em;
-    font-weight: 500;
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    color: #5c67a7;
-  }
-  .what-i-do .develop .develop-description p {
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 400;
-    color: #545454;
-    line-height: 1.7;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .what-i-do .develop .develop-description h3 {
-    font-size: 1.8em;
-    padding-bottom: 0.1em;
-    padding-top: 1em;
-    font-weight: 500;
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    color: #5c67a7;
-  }
-  .what-i-do .develop .develop-description p {
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 400;
-    color: #545454;
-    line-height: 1.8;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .what-i-do .develop .develop-description h3 {
-    font-size: 1.8em;
-    padding-bottom: 0.1em;
-    text-align: left;
-    font-weight: 500;
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    color: #5c67a7;
-  }
-  .what-i-do .develop .develop-description p {
-    margin: 0 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.3em;
-    text-align: left;
-    font-weight: 300;
-    color: #545454;
-    line-height: 1.7;
-  }
 }
 
 .night {

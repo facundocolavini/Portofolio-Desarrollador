@@ -113,58 +113,9 @@
                 }
             }
         }
-
-        .design-description{
-            /*Tipografia para mobiles small to L*/
-            @media (max-width: 399px) and (min-width: 300px){
-              
-               h3{
-                    @include mobile-s-h;
-                }
-                p{
-                    @include mobile-s-p;
-                }
-            }
-            /*Tipografia para Mobile small*/
-            @media (max-width: 767px) and (min-width:400px ){
-                h3{
-                    @include mobile-m-l-h;
-                }
-                p{
-                    @include mobile-m-l-p
-                }
-                
-            }
-            /*Tablets*/
-            @media  (min-width:768px) and (max-width: 991px){
-                h3{
-                    @include tablet-h;
-                }
-                p{
-                    @include tablet-p;
-                }
-            }
-            /*Escritorio*/
-            @include media(desktop-s){
-                h3{
-                    @include desktop-h;
-                }
-
-                p{
-                    @include desktop-p;
-                }
-            }
-        }
     }
 
-
-    
-
     .develop{
-        /*Mixins p y h segun sus breakpoints*/
-       
- 
-       
         figure{
             max-width: 150px;
             width: 150px;
@@ -190,47 +141,6 @@
         
             .icons-dev{ 
                 @include image-vert-animation($image-dev-animation,77px,77px);
-            }
-        }
-        .develop-description{
-              /*Tipografia para mobiles small to L*/
-              @media (max-width: 399px) and (min-width: 300px){
-              
-                h3{
-                     @include mobile-s-h;
-                 }
-                 p{
-                     @include mobile-s-p;
-                 }
-             }
-             /*Tipografia para Mobile small*/
-             @media (max-width: 767px) and (min-width:400px ){
-                 h3{
-                     @include mobile-m-l-h;
-                 }
-                 p{
-                     @include mobile-m-l-p
-                 }
-                 
-             }
-             /*Tablets*/
-             @media  (min-width:768px) and (max-width: 991px){
-                 h3{
-                     @include tablet-h;
-                 }
-                 p{
-                     @include tablet-p;
-                 }
-             }
-             /*Escritorio*/
-            @include media(desktop-s){
-                h3{
-                    @include desktop-h;
-                }
-
-                p{
-                    @include desktop-p;
-                }
             }
         }
     }
