@@ -177,7 +177,7 @@
   }
   5% {
     background-position: 0 77px;
-  } 
+  }
   35% {
     background-position: 0 77px;
   }
@@ -525,7 +525,7 @@ a:link, a:visited, a:active {
   width: 77px;
   height: 77px;
   background-position: center;
-  background-image: url(/icons/design-icons-vertig.png);
+  background-image: url("/icons/design-icons-vertig.png");
   object-fit: contain;
   background-size: cover;
 }
@@ -558,7 +558,7 @@ a:link, a:visited, a:active {
   width: 77px;
   height: 77px;
   background-position: center;
-  background-image: url(/icons/dev-icons-vert.png);
+  background-image: url("/icons/dev-icons-vert.png");
   object-fit: contain;
   background-size: cover;
 }
