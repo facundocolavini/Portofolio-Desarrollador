@@ -347,7 +347,7 @@ a:link, a:visited, a:active {
   bottom: 0;
   height: 25px;
   width: 20px;
-  background-image: url("icons/mail.png");
+  background-image: url("../icons/mail.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
