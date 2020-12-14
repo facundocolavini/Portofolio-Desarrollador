@@ -12,23 +12,113 @@ $grey:                   lighten(black, 45%);
 $lightgrey:              lighten(black, 75%);
 $lightergrey:            lighten(black, 90%);
 $white:                  rgb(255,255,255);
+$white-alpha:           #FDFDFD;
 
 $color-borders:          $lightgrey;
 $color-footer: rgba(0, 0, 0, 0.904);
-$color-h-footer:#eeeeee;
-$color-btn-f:#56507a;
+$color-h-footer:$white;
+$color-btn-f:#536DFE;
+$color-contact-backgroud:#343a40;
+$color-btn-hover:#536dfea1;
 
 /*------Font Definition------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 $basefont: 'Poppins', sans-serif;
+$herofont:'Kaushan Script', cursive; 
 $color-h1: #1c1818;
- 
- 
+$color-hero:#536dfeb8;
 
+ 
 /*--------Constantes--------*/
-
+$background-page:  url('/images/wood_1.png');
+$font-size-h:3em;
+$font-size-p:1.6em;
+$color-h3:#5c67a7;
 $h1: 60px;
 $h4: 40px;
-$h5: 30px
+$h5: 30px;
+$image-tec-animation:url(/icons/design-icons-vertig.png);
+$image-dev-animation:url(/icons/dev-icons-vert.png);
+$image-cloud: url('/images/thinking.png');
+
+/*mobile s titulos*/
+$font-mobile-small:1.5em;
+$pb-s: 1rem;
+$pt-s:1em;
+$ft-w-s:500;
+$ma-s:0 0 10px;
+$font-family-s:$basefont;
+$color-m-s:#5c67a7;
+
+/*mobile s parrafos*/
+$margin-s-p:  0 0 10px;
+$f-family-s: $basefont;
+$font-size-s: 1.2em;
+$text-a-s:center;
+$font-w-s:400;
+$col-s:#545454;
+$line-h-s:1.7;
+ 
+/*mobile m l titulos */
+
+$f-mobile-m-l:1.5em;
+$pb-m-l:.1em;
+$pt-m-l:1.1em;
+$font-w-m-l:500;
+$mar-m-l:0 0 10px;
+$font-f-m-l:$basefont;
+$col-ml:#5c67a7;
+
+/*mobile m l parrafos*/
+$ma-m-l:0 0 10px;
+$font-fa-m-l:$basefont;
+$font-s-m-l:1.2em;
+$text-a-m-l: center;
+$f-weight-m-l: 400;
+$co-m-l: #545454;
+$l-height: 1.7;
+
+/*Tablet titulos*/
+$font-s-t:1.8em;
+$padding-b-t:.1em;
+$padding-t-t:1em;
+$font-w-t:500;
+$margin-t: 0 0 10px;
+$font-f-t: $basefont;
+$color-t:#5c67a7;
+
+
+/*Tablet parrafos*/
+$ma-t:0 0 10px;
+$f-family-t: $basefont;
+$f-size-t: 1.2em;
+$t-align-t:center;
+$f-weight-t:400;
+$col-t:#545454;
+$l-height-t: 1.8;
+
+
+/*Desktop titulos*/
+
+
+$font-s-desk:1.8em;
+$padding-b-desk:.1em;
+$text-a-desk:left;
+$font-w-desk:500;
+$mar-desk:0 0 10px; 
+$font-f-desk: $basefont;
+$col-desk:#5c67a7;
+
+
+/*Desktop parrafos*/
+$marg-desk:0 0 10px;
+$f-family-desk:"Poppins", sans-serif;
+$f-size-desk:1.3em;
+$t-align-desk:left;
+$f-weight-desk:300;
+$clr-desk:#545454;
+$l-height-desk:1.7;
+

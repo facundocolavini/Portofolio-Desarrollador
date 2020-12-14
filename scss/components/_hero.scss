@@ -1,0 +1,32 @@
+.hero{
+    background: $background-page;
+    height: 300px;
+
+    
+}
+
+.im-facundo{
+    width: 100%;
+    padding: .5em 0 0;
+    position: relative;
+    color :#8280D8;
+    text-align: center;
+    line-height: 3em;
+    h1{
+        padding: .5em 0 0;
+        font-family: $herofont;
+        font-weight: 600;
+        font-size: 4em;
+        color:$color-hero;
+    }
+    h4{
+        padding: .5em 0 0;
+        padding-top:10px ;
+        font-family: $basefont;
+        font-size: 150%;
+        font-weight: 400;
+        font-family: "brandon-grotesque",sans-serif;
+        color:$color-hero;
+    }
+    
+}

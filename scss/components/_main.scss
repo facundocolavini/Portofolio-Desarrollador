@@ -1,0 +1,243 @@
+.main{
+    background: #f3f2f1;
+}
+
+.about-me{
+    padding: 3em;
+
+    figure{
+        margin: 0 auto;
+        max-width: 150px;
+        
+        
+        .user-image{
+            @include user-image;
+        }
+    }
+             /*Tipografia para mobiles small to L*/
+             @media (max-width: 399px) and (min-width: 300px){
+              
+                h3{
+                     @include mobile-s-h;
+                 }
+                 p{
+                     @include mobile-s-p;
+                 }
+             }
+             /*Tipografia para Mobile small*/
+             @media (max-width: 767px) and (min-width:400px ){
+                 h3{
+                     @include mobile-m-l-h;
+                 }
+                 p{
+                     @include mobile-m-l-p
+                 }
+                 
+             }
+             /*Tablets*/
+             @media  (min-width:768px) and (max-width: 991px){
+                 h3{
+                     @include tablet-h;
+                 }
+                 p{
+                     @include tablet-p;
+                 }
+             }
+             /*Escritorio*/
+             @include media(desktop-s){
+                 h3{
+                     @include desktop-h;
+                 }
+ 
+                 p{
+                     @include desktop-p;
+                 }
+             }
+   
+    .line{
+        @include separator;
+    }
+}
+
+.what-i-do{
+ 
+    h1{
+        @media (max-width: 399px) and (min-width: 300px){
+            font-size: 1.5em;
+        }
+        padding: 2em 0;
+        font-size: $font-size-p;
+        font-size: $font-size-h;
+        color:#5c67a7;
+    }
+    .design{
+        margin: 1em 0;
+        text-align: center;
+
+        .design__content{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+
+            .design__content-info{
+                max-width: 150px;
+                position: relative;
+               
+                figure{
+                    max-width: 150px;
+                   
+                    width: 150px;
+                    img{
+
+                    width: 100%;
+                    background: #f3f2f1;
+                    
+                    }
+                }
+                .design__content-icon{
+                    
+                    background:transparent;
+                    border-radius: 10px;
+                    width: 77;
+                    height: 77px;
+                    position: absolute;
+                    left: 80%;
+                    background-position: center;
+                    overflow: hidden;
+                    top: 1.6em;
+                    .icons-tec{ 
+                        @include image-vert-animation($image-tec-animation,77px,77px);
+                    }
+                }
+            }
+        }
+
+        .design-description{
+            /*Tipografia para mobiles small to L*/
+            @media (max-width: 399px) and (min-width: 300px){
+              
+               h3{
+                    @include mobile-s-h;
+                }
+                p{
+                    @include mobile-s-p;
+                }
+            }
+            /*Tipografia para Mobile small*/
+            @media (max-width: 767px) and (min-width:400px ){
+                h3{
+                    @include mobile-m-l-h;
+                }
+                p{
+                    @include mobile-m-l-p
+                }
+                
+            }
+            /*Tablets*/
+            @media  (min-width:768px) and (max-width: 991px){
+                h3{
+                    @include tablet-h;
+                }
+                p{
+                    @include tablet-p;
+                }
+            }
+            /*Escritorio*/
+            @include media(desktop-s){
+                h3{
+                    @include desktop-h;
+                }
+
+                p{
+                    @include desktop-p;
+                }
+            }
+        }
+    }
+
+
+    
+
+    .develop{
+        /*Mixins p y h segun sus breakpoints*/
+       
+ 
+       
+        figure{
+            max-width: 150px;
+            width: 150px;
+            img{
+
+            width: 100%;
+            background: #f3f2f1;
+            
+            }
+        }
+        .develop-animation-icon{
+                    
+            background:#f3f2f1;
+            border-radius: 10px;
+            width: 77;
+            height: 77px;
+            position: absolute;
+            left: 50%;
+            background-position: center;
+            overflow: hidden;
+            top: 1.6em;
+            align-items: center;
+        
+            .icons-dev{ 
+                @include image-vert-animation($image-dev-animation,77px,77px);
+            }
+        }
+        .develop-description{
+              /*Tipografia para mobiles small to L*/
+              @media (max-width: 399px) and (min-width: 300px){
+              
+                h3{
+                     @include mobile-s-h;
+                 }
+                 p{
+                     @include mobile-s-p;
+                 }
+             }
+             /*Tipografia para Mobile small*/
+             @media (max-width: 767px) and (min-width:400px ){
+                 h3{
+                     @include mobile-m-l-h;
+                 }
+                 p{
+                     @include mobile-m-l-p
+                 }
+                 
+             }
+             /*Tablets*/
+             @media  (min-width:768px) and (max-width: 991px){
+                 h3{
+                     @include tablet-h;
+                 }
+                 p{
+                     @include tablet-p;
+                 }
+             }
+             /*Escritorio*/
+            @include media(desktop-s){
+                h3{
+                    @include desktop-h;
+                }
+
+                p{
+                    @include desktop-p;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

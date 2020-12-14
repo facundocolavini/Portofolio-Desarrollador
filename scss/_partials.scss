@@ -10,8 +10,12 @@
 * Scss Libraries, mixins, functions and any Scss focused logic
 **/
  
-@import "lib/settings";
 
+@import "lib/settings";
+@import "lib/breakpoints";
+@import "lib/mixins";
+@import "lib/media";
+@import "lib/animations";
 /*Styleguide*/
 @import "styleguide/styleguide";
 
@@ -22,5 +26,6 @@
 @import "components/header";
 @import "components/footer";
 @import "components/contact";
-
+@import "components/main";
+@import "components/night";
 @import "components/hero";

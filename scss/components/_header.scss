@@ -1,0 +1,17 @@
+ .header{
+    padding: 2em 0;
+    background: $background-page;
+}
+
+
+.image__logo{
+    img{
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        background-position: center;
+        background-size: contain;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+    }
+}

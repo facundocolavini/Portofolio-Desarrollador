@@ -1,0 +1,136 @@
+
+
+@mixin max-width($max-width : $pagemaxwidth)  {
+	margin-left:auto;
+	margin-right:auto;
+	max-width: $max-width;
+	width:100%;
+}
+
+
+@mixin separator{
+    position: relative;
+    border: 2px solid grey;
+    opacity: 0.20;
+    width: 10em;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    margin-top:2em;
+    top:2em;
+    line-height: 1.7;
+    box-shadow: 2px 2px 2px black;
+}
+
+@mixin user-image {
+ 
+    width: 130px;
+    background: #7f66bb;
+    border-radius: 1000px;
+    box-shadow: 2px 1px 2px 0;
+ 
+}
+
+@mixin image-vert-animation($img-background,$width,$height){
+    position:relative;
+    animation: move-down;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    width: $width;
+    height: $height;
+    background-position: center;  
+    background-image: $img-background;
+    object-fit: contain;
+    background-size: cover;
+ 
+}
+
+ /*Mixin para tipografia responsive*/
+@mixin mobile-s-h($font-mobile-s:$font-mobile-small,$pb-mobile-s:$pb-s,$pt-mobile-s:$pt-s,$font-weight-s:$ft-w-s,$mar-mobile-s:$ma-s,$f-fam-s:$font-family-s,$color-s:$color-m-s){
+    
+    font-size: $font-mobile-s;
+    padding-bottom:$pb-mobile-s;
+    padding-top:$pt-mobile-s;
+    font-weight:$font-weight-s;
+    margin:$mar-mobile-s;
+    font-family: $f-fam-s;
+    color:$color-s;  
+}
+
+/*Mobile s parrafos*/
+@mixin mobile-s-p($margin-m-s:$margin-s-p,$font-f-m-s:$f-family-s,$font-size-m-s:$font-size-s,$text-align-s:$text-a-s,$font-weight-s:$font-w-s,$color-s:$col-s,$line-height-s:$line-h-s){
+    
+    margin: $margin-m-s;
+    font-family: $font-f-m-s;
+    font-size:$font-size-m-s;
+    text-align: $text-align-s;
+    font-weight:$font-weight-s;
+    color: $color-s;
+    line-height: $line-h-s;
+}
+/*Mobile m y l titulos*/
+
+@mixin mobile-m-l-h($font-mobile-m-l:$f-mobile-m-l,$pb-mobile-m-l:$pb-m-l,$pt-mobile-m-l:$pt-m-l,$font-w-mobile-m-l:$font-w-m-l,$mar-mobile-m-l:$mar-m-l,$font-fam-mobile-m-l:$font-f-m-l,$col-mobile-m-l:$col-ml){
+    
+    font-size: $font-mobile-m-l;
+    padding-bottom:$pb-mobile-m-l;
+    padding-top:$pt-mobile-m-l;
+    font-weight: $font-w-mobile-m-l;
+    margin: $mar-m-l;
+    font-family: $font-fam-mobile-m-l;
+    color:$col-ml;
+}
+@mixin mobile-m-l-p($margin-m-l:$ma-m-l,$font-family-m-l:$font-fa-m-l,$font-size-m-l:$font-s-m-l,$text-align-m-l:$text-a-m-l,$font-w-m-l:$f-weight-m-l,$color-m-l:$co-m-l,$line-height-m-l:$l-height){
+    margin:$margin-m-l;
+    font-family: $font-family-m-l;
+    font-size: $font-size-m-l;
+    text-align: $text-align-m-l;
+    font-weight: $font-w-m-l;
+    color:$color-m-l;
+    line-height: $line-height-m-l;
+}
+
+@mixin tablet-h($f-size-t:$font-s-t,$p-bottom-t:$padding-b-t,$p-top-t:$padding-t-t, $f-weight-t:$font-w-t,$mar-t:$margin-t,$f-family-t:$font-f-t,$col-t:$color-t){
+
+    font-size:$f-size-t;
+    padding-bottom:$p-bottom-t;
+    padding-top:$p-top-t;
+    font-weight: $f-weight-t;
+    margin: $mar-t;
+    font-family: $f-family-t;
+    color:$col-t;
+}
+@mixin tablet-p($mar-t:$ma-t,$font-family-t:$f-family-t,$font-size-t:$f-size-t,$text-align:$t-align-t,$font-weight-t:$f-weight-t,$co-t:$col-t,$line-height-t:$l-height-t){
+    margin: $mar-t;
+    font-family: $font-family-t;
+    font-size: $font-size-t;
+    text-align: $t-align-t;
+    font-weight: $f-weight-t;
+    color: $co-t;
+    line-height:$line-height-t;
+}
+
+
+
+@mixin desktop-h($font-size-desk:$font-s-desk,$padding-bottom-desk:$padding-b-desk,$text-align-desk:$text-a-desk,$font-weight-desk:$font-w-desk,$margin-desk:$mar-desk,$font-family-desk:$font-f-desk,$color-desk:$col-desk){
+    font-size:$font-size-desk;
+    padding-bottom:$padding-bottom-desk;
+    text-align: $text-align-desk;
+    font-weight:$font-weight-desk;
+    margin: $margin-desk;
+    font-family:$font-family-desk;
+    color:$color-desk;
+}
+
+
+
+@mixin desktop-p($margin-desk:$marg-desk,$font-family-desk:$f-family-desk,$font-size-desk:$f-size-desk,$text-align-desk:$t-align-desk,$font-weight-desk:$f-weight-desk,$color-desk:$clr-desk,$line-height-desk:$l-height-desk){
+    margin:$margin-desk;
+    font-family: $font-family-desk;
+    font-size: $font-size-desk;
+    text-align: $text-align-desk;
+    font-weight: $font-weight-desk;
+    color:$color-desk;
+    line-height:$line-height-desk;
+}

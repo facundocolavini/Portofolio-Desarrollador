@@ -1,0 +1,68 @@
+/*Breakpoints */
+
+
+/*Tablets*/
+@include media (tablet){
+    .design{
+        .col-md-6 {
+            flex:none;
+            max-width: none;
+        }
+        .col-md-4{
+            flex:none;
+            max-width: 100%;
+        }
+    }
+
+    .develop{        
+        .col-md-4{
+            flex:none;
+            max-width: none;
+        }
+        .col-md-8{
+            flex:none;
+            max-width: 100%;
+        }   
+    }
+}
+
+
+/*Desktop*/
+@include media (desktop-s){
+    .design{
+        .col-md-4{
+            padding: 1em 0 0 3em;
+/*             margin-left: 6em; */
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+        .col-md-6 {
+            padding: 0 0 0 3em;
+            margin: 0 auto;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    .develop{        
+        .col-md-4{
+            padding: 0 0 0 3em;
+            margin: 0 auto;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .col-md-8{
+            padding: 1em 0 0 3em;
+            margin-left: 6em;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-md-push{
+            left:50%;;
+        }
+        .col-md-pull{
+            right: 50%;
+        }
+    }
+}

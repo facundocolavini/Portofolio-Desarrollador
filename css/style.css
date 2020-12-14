@@ -17,15 +17,108 @@
 /*------Colors---------*/
 /*------Font Definition------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 /*--------Constantes--------*/
+/*mobile s titulos*/
+/*mobile s parrafos*/
+/*mobile m l titulos */
+/*mobile m l parrafos*/
+/*Tablet titulos*/
+/*Tablet parrafos*/
+/*Desktop titulos*/
+/*Desktop parrafos*/
+/* Media Queries Mixin
+**********************/
+/*Mixin para tipografia responsive*/
+/*Mobile s parrafos*/
+/*Mobile m y l titulos*/
+/*Breakpoints */
+/*Tablets*/
+@media only screen and (min-width: 768px) {
+  .design .col-md-6 {
+    flex: none;
+    max-width: none;
+  }
+  .design .col-md-4 {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .develop .col-md-4 {
+    flex: none;
+    max-width: none;
+  }
+  .develop .col-md-8 {
+    flex: none;
+    max-width: 100%;
+  }
+}
+/*Desktop*/
+@media only screen and (min-width: 992px) {
+  .design .col-md-4 {
+    padding: 1em 0 0 3em;
+    /*             margin-left: 6em; */
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .design .col-md-6 {
+    padding: 0 0 0 3em;
+    margin: 0 auto;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .develop .col-md-4 {
+    padding: 0 0 0 3em;
+    margin: 0 auto;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .develop .col-md-8 {
+    padding: 1em 0 0 3em;
+    margin-left: 6em;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .develop .col-md-push {
+    left: 50%;
+  }
+  .develop .col-md-pull {
+    right: 50%;
+  }
+}
+@keyframes move-down {
+  0% {
+    background-position: 0 0;
+  }
+  5% {
+    background-position: 0 77px;
+  }
+  35% {
+    background-position: 0 77px;
+  }
+  40% {
+    background-position: 0 154px;
+  }
+  68% {
+    background-position: 0 154px;
+  }
+  73% {
+    background-position: 0 231px;
+  }
+  100% {
+    background-position: 0 231px;
+  }
+}
 /*Styleguide*/
 html {
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 a:link, a:visited, a:active {
@@ -35,6 +128,21 @@ a:link, a:visited, a:active {
 /**
 * Componets used for layouts, headers, articles, etc...
 **/
+.header {
+  padding: 2em 0;
+  background: url("/images/wood_1.png");
+}
+
+.image__logo img {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  background-position: center;
+  background-size: contain;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+}
+
 .footer {
   background: #d4e5e5;
   padding: 2em 0;
@@ -48,9 +156,8 @@ a:link, a:visited, a:active {
   margin: 0;
 }
 .footer a {
-  text-decoration: underline;
-  color: #56507a;
-  border-bottom: 1px solid #eeeeee;
+  text-decoration: none;
+  color: #536DFE;
 }
 
 .social {
@@ -77,16 +184,23 @@ a:link, a:visited, a:active {
   width: 50px;
 }
 
+/*----Responsive*-------*/
 .contact-links {
-  background: rgba(0, 0, 0, 0.904);
+  background: #343a40;
 }
 
 /*Col de enlaces*/
 .links {
+  /*---Responsive----*/
   padding: 25px;
 }
+@media only screen and (min-width: 992px) {
+  .links {
+    text-align: left;
+  }
+}
 .links h3 {
-  color: #eeeeee;
+  color: white;
 }
 .links__nav {
   list-style: none;
@@ -97,8 +211,11 @@ a:link, a:visited, a:active {
   padding: 5px;
 }
 .links__nav li a {
-  color: #eeeeee;
+  color: white;
   text-decoration: none;
+}
+.links a:hover {
+  color: #536DFE;
 }
 
 /*Col de contacto*/
@@ -107,37 +224,478 @@ a:link, a:visited, a:active {
   position: relative;
   text-align: center;
 }
+@media only screen and (min-width: 992px) {
+  .contact {
+    text-align: right;
+  }
+}
 .contact h3 {
   padding: 5px;
-  color: #eeeeee;
+  color: white;
   text-align: center;
+  margin-bottom: 10px;
+  /*---Responsive----*/
+}
+@media only screen and (min-width: 992px) {
+  .contact h3 {
+    text-align: right;
+  }
 }
 .contact__button {
   text-transform: uppercase;
   outline: none;
-  background-color: #56507a;
+  box-shadow: 1px 1px grey 0.1;
+  background-color: #536DFE;
   font-family: "Poppins", sans-serif;
+  margin-top: 5px;
   position: relative;
   text-align: center;
   border: 0;
   width: 150px;
-  padding-left: 15px;
+  padding-left: 45px;
   height: 50px;
 }
 .contact__button .email {
   position: absolute;
   text-align: center;
-  left: 10%;
+  top: 27%;
+  left: 15%;
+  bottom: 0;
   height: 25px;
-  width: 25px;
+  width: 20px;
   background-image: url("/icons/mail.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .contact__button:hover {
-  background-color: #56507a9e;
+  background-color: #536dfea1;
   text-shadow: none;
   outline: none;
+}
+
+.main {
+  background: #f3f2f1;
+}
+
+.about-me {
+  padding: 3em;
+  /*Tipografia para mobiles small to L*/
+  /*Tipografia para Mobile small*/
+  /*Tablets*/
+  /*Escritorio*/
+}
+.about-me figure {
+  margin: 0 auto;
+  max-width: 150px;
+}
+.about-me figure .user-image {
+  width: 130px;
+  background: #7f66bb;
+  border-radius: 1000px;
+  box-shadow: 2px 1px 2px 0;
+}
+@media (max-width: 399px) and (min-width: 300px) {
+  .about-me h3 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .about-me p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 767px) and (min-width: 400px) {
+  .about-me h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.1em;
+    padding-top: 1.1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .about-me p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-me h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .about-me p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.8;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-me h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    text-align: left;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .about-me p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 300;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+.about-me .line {
+  position: relative;
+  border: 2px solid grey;
+  opacity: 0.2;
+  width: 10em;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  top: 2em;
+  line-height: 1.7;
+  box-shadow: 2px 2px 2px black;
+}
+
+.what-i-do h1 {
+  padding: 2em 0;
+  font-size: 1.6em;
+  font-size: 3em;
+  color: #5c67a7;
+}
+@media (max-width: 399px) and (min-width: 300px) {
+  .what-i-do h1 {
+    font-size: 1.5em;
+  }
+}
+.what-i-do .design {
+  margin: 1em 0;
+  text-align: center;
+}
+.what-i-do .design .design__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.what-i-do .design .design__content .design__content-info {
+  max-width: 150px;
+  position: relative;
+}
+.what-i-do .design .design__content .design__content-info figure {
+  max-width: 150px;
+  width: 150px;
+}
+.what-i-do .design .design__content .design__content-info figure img {
+  width: 100%;
+  background: #f3f2f1;
+}
+.what-i-do .design .design__content .design__content-info .design__content-icon {
+  background: transparent;
+  border-radius: 10px;
+  width: 77;
+  height: 77px;
+  position: absolute;
+  left: 80%;
+  background-position: center;
+  overflow: hidden;
+  top: 1.6em;
+}
+.what-i-do .design .design__content .design__content-info .design__content-icon .icons-tec {
+  position: relative;
+  animation: move-down;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  width: 77px;
+  height: 77px;
+  background-position: center;
+  background-image: url(/icons/design-icons-vertig.png);
+  object-fit: contain;
+  background-size: cover;
+}
+.what-i-do .design .design-description {
+  /*Tipografia para mobiles small to L*/
+  /*Tipografia para Mobile small*/
+  /*Tablets*/
+  /*Escritorio*/
+}
+@media (max-width: 399px) and (min-width: 300px) {
+  .what-i-do .design .design-description h3 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .what-i-do .design .design-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 767px) and (min-width: 400px) {
+  .what-i-do .design .design-description h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.1em;
+    padding-top: 1.1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .what-i-do .design .design-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .what-i-do .design .design-description h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .what-i-do .design .design-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.8;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .what-i-do .design .design-description h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    text-align: left;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .what-i-do .design .design-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 300;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+.what-i-do .develop {
+  /*Mixins p y h segun sus breakpoints*/
+}
+.what-i-do .develop figure {
+  max-width: 150px;
+  width: 150px;
+}
+.what-i-do .develop figure img {
+  width: 100%;
+  background: #f3f2f1;
+}
+.what-i-do .develop .develop-animation-icon {
+  background: #f3f2f1;
+  border-radius: 10px;
+  width: 77;
+  height: 77px;
+  position: absolute;
+  left: 50%;
+  background-position: center;
+  overflow: hidden;
+  top: 1.6em;
+  align-items: center;
+}
+.what-i-do .develop .develop-animation-icon .icons-dev {
+  position: relative;
+  animation: move-down;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  width: 77px;
+  height: 77px;
+  background-position: center;
+  background-image: url(/icons/dev-icons-vert.png);
+  object-fit: contain;
+  background-size: cover;
+}
+.what-i-do .develop .develop-description {
+  /*Tipografia para mobiles small to L*/
+  /*Tipografia para Mobile small*/
+  /*Tablets*/
+  /*Escritorio*/
+}
+@media (max-width: 399px) and (min-width: 300px) {
+  .what-i-do .develop .develop-description h3 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .what-i-do .develop .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 767px) and (min-width: 400px) {
+  .what-i-do .develop .develop-description h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.1em;
+    padding-top: 1.1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .what-i-do .develop .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .what-i-do .develop .develop-description h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .what-i-do .develop .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.8;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .what-i-do .develop .develop-description h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    text-align: left;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+  }
+  .what-i-do .develop .develop-description p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 300;
+    color: #545454;
+    line-height: 1.7;
+  }
+}
+
+.night {
+  overflow: hidden;
+  background: url("/images/wood_1.png");
+  box-shadow: grey 1px 2px 2px;
+}
+.night img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-size: contain;
+  background-position: center;
+}
+
+.hero {
+  background: url("/images/wood_1.png");
+  height: 300px;
+}
+
+.im-facundo {
+  width: 100%;
+  padding: 0.5em 0 0;
+  position: relative;
+  color: #8280D8;
+  text-align: center;
+  line-height: 3em;
+}
+.im-facundo h1 {
+  padding: 0.5em 0 0;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 600;
+  font-size: 4em;
+  color: #536dfeb8;
+}
+.im-facundo h4 {
+  padding: 0.5em 0 0;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 150%;
+  font-weight: 400;
+  font-family: "brandon-grotesque", sans-serif;
+  color: #536dfeb8;
 }
 
 /*# sourceMappingURL=style.css.map */

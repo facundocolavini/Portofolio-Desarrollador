@@ -1,12 +1,17 @@
 .contact-links{
-    background:$color-footer;
+    background:$color-contact-backgroud;
 }
 
 /*Col de enlaces*/
 .links{
+    /*---Responsive----*/
+    @include media(desktop-s){
+        text-align: left;
+    }
     padding: 25px;
     h3{
         color:$color-h-footer;
+    
     }
     &__nav{
         list-style: none;
@@ -14,11 +19,15 @@
         padding: 0;
         li{
             padding: 5px;
+           
             a{
                 color:$color-h-footer;
                 text-decoration: none;
             }
         }
+    }
+    a:hover{
+        color:$color-btn-f;
     }
 }
 
@@ -27,41 +36,51 @@
     padding: 25px;
     position: relative;
     text-align: center;
+    @include media(desktop-s){
+        text-align: right;
+    }
     h3{
         padding: 5px;
         color:$color-h-footer;
         text-align: center;
+        margin-bottom: 10px;
+            /*---Responsive----*/
+        @include media(desktop-s){
+            text-align: right;
+        }
     }
-
+    
     
     &__button{
         text-transform: uppercase;
         outline:none;
-
-        background-color: $color-btn-f;
+        box-shadow: 1px 1px  grey  .1;
+        background-color:#536DFE;
         font-family: $basefont;
-         
+        margin-top: 5px;
         position: relative;
         text-align: center;
         border:0;
         width: 150px;
-        padding-left:15px ;
+        padding-left:45px ;
         height: 50px;
         .email{
             position: absolute;
             text-align: center;
-            left: 10%;
-            
+            top:27%;
+            left: 15%;
+            bottom:0;
             height: 25px;
-            width: 25px;
+            width: 20px;
             
             background-image: url('/icons/mail.png');
             background-repeat: no-repeat;
             background-size: contain;
+            
         }
     }
     &__button:hover{
-        background-color:#56507a9e;
+        background-color:$color-btn-hover;
         text-shadow: none;
         outline:none;
 

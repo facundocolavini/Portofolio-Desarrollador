@@ -11,9 +11,9 @@
         margin: 0;
     }
     a{
-        text-decoration: underline;
+        text-decoration: none;
         color:$color-btn-f;
-        border-bottom: 1px solid $color-h-footer;
+        
     }
 }
 
@@ -40,3 +40,7 @@
         }
     }
 }
+
+
+/*----Responsive*-------*/ 
+
