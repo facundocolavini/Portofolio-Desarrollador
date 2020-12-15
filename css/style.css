@@ -326,18 +326,24 @@ a:link, a:visited, a:active {
   }
 }
 .contact__button {
+  text-decoration: none;
   text-transform: uppercase;
   outline: none;
   box-shadow: 1px 1px grey 0.1;
   background-color: #536DFE;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   margin-top: 5px;
   position: relative;
   text-align: center;
   border: 0;
   width: 150px;
+  color: black;
   padding-left: 45px;
   height: 50px;
+  align-items: center;
+  padding-top: 0.7em;
+  padding-right: 0.9em;
 }
 .contact__button .email {
   position: absolute;
@@ -353,6 +359,7 @@ a:link, a:visited, a:active {
 }
 .contact__button:hover {
   background-color: #536dfea1;
+  color: rgba(0, 0, 0, 0.877);
   text-shadow: none;
   outline: none;
 }
