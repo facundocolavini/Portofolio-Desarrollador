@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8e1b8852f6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +18,7 @@
   </head>
   <body>
     <!--Header --> 
-    </header> 
+
     <header>
       <nav id="header" class=" header navbar navbar-expand-lg navbar-dark bg-dark ">
         <div class="container">
@@ -27,11 +30,11 @@
           </button>
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto ">
+            <ul class="navbar-nav ml-auto text-center">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Sobre mí </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">Proyectos</a>
               </li>
             </ul>
@@ -45,7 +48,7 @@
         <div class="row text-center">
           <div class="col-12 col-lg pt-5">
             <div class="im-facundo">
-              <h1>I'm Facundo</h1>
+              <h1>Hi,I am Facundo</h1>
               <h4>Desarrollador Web</h4>
             </div>
           </div>
@@ -91,9 +94,9 @@
           <div class="row text-center">
             <div class="col-md-12">
               <article>
-                <div class="what-i-do">
+                <div class="what-i-do" data-aos="fade-left">
                   <h1>¿Que puedo hacer?</h1>
-                  <div class="design row ">
+                  <div class="design row" >
                     <div class="col-12 col-md-4">
                       <div class="design__content">
                         <div class="design__content-info">
@@ -112,16 +115,16 @@
                           <p>Me gusta que sea simple. Mis objetivos son centrarme en la tipografía, el
                             contenido y transmitir el mensaje que desea enviar</p>
                       </div>
-                    </div>
+                    </div> 
                   </div>
-                  <div class="develop row">
+                  <div class="develop row" data-aos="fade-right" >
                     <div class="col-12 col-md-4 col-md-push ">
                       <div class="develop__content-info">
                         <figure>
                           <img src="./images/uprogressive-app.svg" alt="images uprogressive-app">  
                         </figure>
-                        <div class="develop-animation-icon">
-                          <div class="icons-dev">
+                        <div class="develop-animation-icon ">
+                          <div class="icons-dev  ">
                           </div>
                         </div>
                       </div>
@@ -199,8 +202,10 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>

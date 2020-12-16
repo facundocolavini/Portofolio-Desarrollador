@@ -3,13 +3,13 @@
 }
 
 .about-me{
-    padding: 3em;
+    padding: 4em;
 
     figure{
         margin: 0 auto;
         max-width: 150px;
-        
-        
+        padding-bottom: 2em;
+        margin-bottom: 10px;
         .user-image{
             @include user-image;
         }
@@ -62,7 +62,7 @@
 .what-i-do{
  
     h1{
-        @media (max-width: 399px) and (min-width: 300px){
+        @media (max-width: 767px) and (min-width: 300px){
             font-size: 1.5em;
         }
         padding: 2em 0;
@@ -71,7 +71,8 @@
         color:#5c67a7;
     }
     .design{
-        margin: 1em 0;
+        
+        margin: 3em 0;
         text-align: center;
 
         .design__content{
@@ -82,15 +83,15 @@
 
 
             .design__content-info{
-                max-width: 150px;
+                max-width: 200px;
                 position: relative;
                
                 figure{
-                    max-width: 150px;
-                   
-                    width: 150px;
+                    margin: 0 auto;
+                    width: 200px;
                     img{
-
+                    text-align: center;
+                    align-items: center;
                     width: 100%;
                     background: #f3f2f1;
                     
@@ -108,7 +109,7 @@
                     overflow: hidden;
                     top: 1.6em;
                     .icons-tec{ 
-                        @include image-vert-animation($image-tec-animation,77px,77px);
+                        @include image-vert-animation($image-tec-animation,77px,77px,$anim-duration-mov-down,$animation-mov-down);
                     }
                 }
             }
@@ -116,31 +117,46 @@
     }
 
     .develop{
-        figure{
-            max-width: 150px;
-            width: 150px;
-            img{
-
-            width: 100%;
-            background: #f3f2f1;
-            
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin: 3em 0;
+        text-align: center;
+        .develop__content-info{
+ 
+            figure{
+                margin: 0 auto;
+                width: 230px;
+                img{
+                    text-align: center;
+                    align-items: center;
+                    width: 100%;
+                    background: #f3f2f1;
+                }
             }
-        }
-        .develop-animation-icon{
-                    
-            background:#f3f2f1;
-            border-radius: 10px;
-            width: 77;
-            height: 77px;
-            position: absolute;
-            left: 50%;
-            background-position: center;
-            overflow: hidden;
-            top: 1.6em;
-            align-items: center;
-        
-            .icons-dev{ 
-                @include image-vert-animation($image-dev-animation,77px,77px);
+            .develop-animation-icon{
+                display:flex;
+                background:transparent;
+                border-radius:0;
+                width: 77;
+                height: 77px;
+                position: absolute;
+                left: 28%;
+
+                margin: 0 auto;
+                background-position: center;
+                overflow: hidden;
+                top: .6em;
+
+
+                .icons-dev{
+              
+                    justify-content: center;
+                    align-items: center;
+                    @include image-vert-animation($image-dev-animation,77px,67px,$anim-duration-mov-down,$animation-mov-down);
+
+                }   
             }
         }
     }

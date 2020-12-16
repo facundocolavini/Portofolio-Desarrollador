@@ -1,5 +1,5 @@
 .footer{
-    background: #d4e5e5;
+    background: $background-page;
     padding: 2em 0;
 
     p{
@@ -9,6 +9,7 @@
         font-family: $basefont;
         text-align: center;
         margin: 0;
+        color: #fff;
     }
     a{
         text-decoration: none;

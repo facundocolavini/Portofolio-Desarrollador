@@ -194,6 +194,31 @@
     background-position: 0 231px;
   }
 }
+/*Keyframes*/
+.fadeIn {
+  /*Clase de la animacion*/
+  -webkit-animation-duration: 6s;
+  /*Asegura que todos estos valores se puedan cumplir para los navegadores*/
+  animation-duration: 6s;
+  /*Cuanto va a durar nuestra animacion*/
+  animation-fill-mode: backwards;
+  /*define que se va a cumpli la regla  de los frames de ida como de regreso*/
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  /*esto le da el nombre a nuestra animacion*/
+}
+
+/*Keyframes*/
+@keyframes fadeIn {
+  /*Aca se define la animacion que va a tener esta clase*/
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*Styleguide*/
 html {
   box-sizing: border-box;
@@ -218,17 +243,21 @@ a:link, a:visited, a:active {
 }
 
 .image__logo img {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 80px;
   padding: 10px;
   background-position: center;
   background-size: contain;
-  border-radius: 15px;
+  border-radius: 23px;
   background-repeat: no-repeat;
 }
 
+.nav-link {
+  font-family: "Poppins", sans-serif;
+}
+
 .footer {
-  background: #d4e5e5;
+  background: url("../images/wood_1.png");
   padding: 2em 0;
 }
 .footer p {
@@ -238,6 +267,7 @@ a:link, a:visited, a:active {
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin: 0;
+  color: #fff;
 }
 .footer a {
   text-decoration: none;
@@ -325,7 +355,7 @@ a:link, a:visited, a:active {
     text-align: right;
   }
 }
-.contact__button {
+.contact .contact__button {
   text-decoration: none;
   text-transform: uppercase;
   outline: none;
@@ -345,7 +375,7 @@ a:link, a:visited, a:active {
   padding-top: 0.7em;
   padding-right: 0.9em;
 }
-.contact__button .email {
+.contact .contact__button .email {
   position: absolute;
   text-align: center;
   top: 27%;
@@ -369,7 +399,7 @@ a:link, a:visited, a:active {
 }
 
 .about-me {
-  padding: 3em;
+  padding: 4em;
   /*Tipografia para mobiles small to L*/
   /*Tipografia para Mobile small*/
   /*Tablets*/
@@ -378,10 +408,12 @@ a:link, a:visited, a:active {
 .about-me figure {
   margin: 0 auto;
   max-width: 150px;
+  padding-bottom: 2em;
+  margin-bottom: 10px;
 }
 .about-me figure .user-image {
   width: 130px;
-  background: #7f66bb;
+  background: #8D8BDB;
   border-radius: 1000px;
   box-shadow: 2px 1px 2px 0;
 }
@@ -485,13 +517,13 @@ a:link, a:visited, a:active {
   font-size: 3em;
   color: #5c67a7;
 }
-@media (max-width: 399px) and (min-width: 300px) {
+@media (max-width: 767px) and (min-width: 300px) {
   .what-i-do h1 {
     font-size: 1.5em;
   }
 }
 .what-i-do .design {
-  margin: 1em 0;
+  margin: 3em 0;
   text-align: center;
 }
 .what-i-do .design .design__content {
@@ -501,14 +533,16 @@ a:link, a:visited, a:active {
   margin: 0 auto;
 }
 .what-i-do .design .design__content .design__content-info {
-  max-width: 150px;
+  max-width: 200px;
   position: relative;
 }
 .what-i-do .design .design__content .design__content-info figure {
-  max-width: 150px;
-  width: 150px;
+  margin: 0 auto;
+  width: 200px;
 }
 .what-i-do .design .design__content .design__content-info figure img {
+  text-align: center;
+  align-items: center;
   width: 100%;
   background: #f3f2f1;
 }
@@ -526,9 +560,9 @@ a:link, a:visited, a:active {
 .what-i-do .design .design__content .design__content-info .design__content-icon .icons-tec {
   position: relative;
   animation: move-down;
-  animation-duration: 15s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: cubic-bezier(12, 0, 0, 11);
   width: 77px;
   height: 77px;
   background-position: center;
@@ -536,34 +570,47 @@ a:link, a:visited, a:active {
   object-fit: contain;
   background-size: cover;
 }
-.what-i-do .develop figure {
-  max-width: 150px;
-  width: 150px;
+.what-i-do .develop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin: 3em 0;
+  text-align: center;
 }
-.what-i-do .develop figure img {
+.what-i-do .develop .develop__content-info figure {
+  margin: 0 auto;
+  width: 230px;
+}
+.what-i-do .develop .develop__content-info figure img {
+  text-align: center;
+  align-items: center;
   width: 100%;
   background: #f3f2f1;
 }
-.what-i-do .develop .develop-animation-icon {
-  background: #f3f2f1;
-  border-radius: 10px;
+.what-i-do .develop .develop__content-info .develop-animation-icon {
+  display: flex;
+  background: transparent;
+  border-radius: 0;
   width: 77;
   height: 77px;
   position: absolute;
-  left: 50%;
+  left: 28%;
+  margin: 0 auto;
   background-position: center;
   overflow: hidden;
-  top: 1.6em;
-  align-items: center;
+  top: 0.6em;
 }
-.what-i-do .develop .develop-animation-icon .icons-dev {
+.what-i-do .develop .develop__content-info .develop-animation-icon .icons-dev {
+  justify-content: center;
+  align-items: center;
   position: relative;
   animation: move-down;
-  animation-duration: 15s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-timing-function: cubic-bezier(12, 0, 0, 11);
   width: 77px;
-  height: 77px;
+  height: 67px;
   background-position: center;
   background-image: url("../icons/dev-icons-vert.png");
   object-fit: contain;
@@ -607,10 +654,11 @@ a:link, a:visited, a:active {
 .im-facundo h4 {
   padding: 0.5em 0 0;
   padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Poppins", sans-serif;
   font-size: 150%;
-  font-weight: 400;
-  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
   color: #536dfeb8;
 }
 

@@ -71,6 +71,7 @@
 /*Tipografia para mobiles small to L*/
 @media (max-width: 399px) and (min-width: 300px){
     .design-description,.develop-description{
+ 
         h3{
             @include mobile-s-h;
         }

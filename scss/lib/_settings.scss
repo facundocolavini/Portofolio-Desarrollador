@@ -37,12 +37,18 @@ $background-page:  url('../images/wood_1.png');
 $font-size-h:3em;
 $font-size-p:1.6em;
 $color-h3:#5c67a7;
+$box-s:rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+
 $h1: 60px;
 $h4: 40px;
 $h5: 30px;
 $image-tec-animation:url('../icons/design-icons-vertig.png');
 $image-dev-animation:url('../icons/dev-icons-vert.png');
 $image-cloud: url('../images/thinking.png');
+$animation-mov-down: move-down;
+$anim-duration-mov-down:12s;
+$animation-flipInX:animate__flipInX;
+$anim-duration-flipInX:20s;
 
 /*mobile s titulos*/
 $font-mobile-small:1.5em;

@@ -23,26 +23,44 @@
 }
 
 @mixin user-image {
- 
     width: 130px;
-    background: #7f66bb;
+    background: #8D8BDB;
     border-radius: 1000px;
     box-shadow: 2px 1px 2px 0;
- 
 }
 
-@mixin image-vert-animation($img-background,$width,$height){
+@mixin image-vert-animation($img-background,$width,$height,$animation-duration ,$animation){
     position:relative;
-    animation: move-down;
-    animation-duration: 15s;
+    animation:$animation;
+    animation-duration: $animation-duration;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-timing-function: cubic-bezier(12,0,0,11);
     width: $width;
     height: $height;
     background-position: center;  
     background-image: $img-background;
     object-fit: contain;
     background-size: cover;
+ 
+}
+
+@mixin image-vert-animation-2($img-background,$width,$height,$animation-duration ,$animation){
+    position:relative;
+    animation:$animation;
+    animation-duration: $animation-duration;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(12,0,0,11);
+    width: $width;
+    height: $height;
+    background-position: center;  
+    background-image: $img-background;
+    object-fit: contain;
+    background-size: cover;
+
+ 
+ 
+ 
+ 
  
 }
 
