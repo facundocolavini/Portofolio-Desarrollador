@@ -16,28 +16,37 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Portofolio</title>
   </head>
-  <body>
+  <body >
     <!--Header --> 
 
     <header>
-      <nav id="header" class=" header navbar navbar-expand-lg navbar-dark bg-dark ">
+      <nav id="header" class=" header navbar navbar-expand-lg navbar-dark bg-dark  fixed-top ">
         <div class="container">
-          <div class="image__logo navbar-brand" href="#">
+          <div class="row text-center">
+<!--           <div class="image__logo navbar-brand" href="#">
             <img src="images/favicon.png"  alt="Logo"> 
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto text-center">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Sobre mí </a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Proyectos</a>
-              </li>
-            </ul>
+          </div> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active ">
+                  <a class="nav-link" href="#about-me">Sobre mí </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#hero">Home </a>
+                </li>
+                <li class="nav-item active ">
+                  <a class="nav-link" href="#what-i-do">Lo que hago</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" class="nav-link js-scroll-trigger" class="link" href="#works">Proyectos</a>
+                </li>
+
+              </ul>
+            </div>
           </div>
       </div>
       </nav>
@@ -56,7 +65,7 @@
       </div>
     </div>
     <!-- Content masterhead-->
-    <div class="night">
+    <div id="hero" class="night">
       <div class="container">
         <div class="row text-center">
           <div class=" col-12 col-md-12  col-lg">
@@ -65,9 +74,9 @@
         </div>
       </div>
     </div>
- 
+    <!-- main -->
     <main  class="main">
-      <section class="about-me">
+      <section id="about-me" class="about-me">
         <div class="container">
           <div class="row text-center">
             <div class="col-12 col-lg">
@@ -89,13 +98,13 @@
           </div>
         </div>
       </section>
-      <section class="skills">
+      <section id="skills" class="skills">
         <div class="container">
           <div class="row text-center">
             <div class="col-md-12">
               <article>
-                <div class="what-i-do" data-aos="fade-left">
-                  <h1>¿Que puedo hacer?</h1>
+                <div id="what-i-do" class="what-i-do" data-aos="fade-left">
+                  <h1>¿Que es lo que hago?</h1>
                   <div class="design row" >
                     <div class="col-12 col-md-4">
                       <div class="design__content">
@@ -131,10 +140,9 @@
                     </div>
                     <div class="col-12 col-md-8 col-md-pull">
                       <div class="develop-description">
-                        <h3>Desarrolla lo que necesitas.</h3>
-                        <p>Necesitaba darle un principio a mi carrera y nada mejor como empezar a
-                          desarrollar mi portafolio para subir todos mis proyectos, mis estudios y
-                          tomarme mi dulce tiempo.
+                        <h3>Diseño y desarrollo.</h3>
+                        <p>
+                          Como desarrollador web, creo, diseño y desarrollo aplicaciones web completas. Mi pila de tecnologías son Html, Css, JavaScript, Node, Express, Sql.También estoy interesado en React. 
                         </p>
                       </div>
                     </div>
@@ -144,6 +152,9 @@
             </div>
           </div>
         </div>
+      </section>
+      <section id="works">
+
       </section>
     </main>
     <!-- Contact -->
@@ -194,12 +205,11 @@
         </div>
       </div>
     </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
-
+  
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

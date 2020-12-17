@@ -33,6 +33,22 @@
 /*Mobile s parrafos*/
 /*Mobile m y l titulos*/
 /*Breakpoints */
+@media (max-width: 768px) and (min-width: 300px) {
+  .header {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .container {
+    padding-right: auto;
+    padding-left: auto;
+  }
+
+  .row {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 /*Tablets*/
 @media only screen and (min-width: 768px) {
   .design .col-md-6 {
@@ -238,14 +254,33 @@ a:link, a:visited, a:active {
 * Componets used for layouts, headers, articles, etc...
 **/
 .header {
-  padding: 2em 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
   background: url("../images/wood_1.png");
+  position: inherit;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  padding-top: 20px;
+}
+.header .ul {
+  display: flex;
+  justify-content: right;
+}
+.header .row {
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+}
+.header .navbar-nav {
+  padding-left: 13px;
 }
 
 .image__logo img {
   height: 70px;
   width: 80px;
   padding: 10px;
+  margin-left: 20px;
   background-position: center;
   background-size: contain;
   border-radius: 23px;
@@ -620,7 +655,6 @@ a:link, a:visited, a:active {
 .night {
   overflow: hidden;
   background: url("../images/wood_1.png");
-  box-shadow: grey 1px 2px 2px;
 }
 .night img {
   width: 100%;
@@ -633,7 +667,7 @@ a:link, a:visited, a:active {
 
 .hero {
   background: url("../images/wood_1.png");
-  height: 300px;
+  /* height: 300px; */
 }
 
 .im-facundo {

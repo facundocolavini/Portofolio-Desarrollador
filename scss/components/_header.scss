@@ -1,6 +1,26 @@
  .header{
-    padding: 2em 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
     background: $background-page;
+    position: inherit;
+    top: 0;
+  
+    left: 0;
+    z-index: 1030;
+    padding-top: 20px;
+ 
+    .ul{
+        display: flex;
+        justify-content: right;
+    }
+    .row{
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+    }
+    .navbar-nav{
+        padding-left: 13px;
+    }
 }
 
 
@@ -9,6 +29,7 @@
         height: 70px;
         width: 80px;
         padding: 10px;
+        margin-left: 20px;
         background-position: center;
         background-size: contain;
         border-radius:23px;
