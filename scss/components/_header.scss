@@ -2,11 +2,8 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
     background: $background-page;
-    position: inherit;
-    top: 0;
-  
-    left: 0;
-    z-index: 1030;
+    position: fixed;
+ 
     padding-top: 20px;
  
     .ul{
@@ -19,7 +16,7 @@
         align-items: center;
     }
     .navbar-nav{
-        padding-left: 13px;
+ 
     }
 }
 

@@ -105,7 +105,7 @@
 }
 /*Tipografia para mobiles small to L*/
 @media (max-width: 399px) and (min-width: 300px) {
-  .design-description h3, .develop-description h3 {
+  .works-description h3, .design-description h3, .develop-description h3 {
     font-size: 1.5em;
     padding-bottom: 1rem;
     padding-top: 1em;
@@ -114,7 +114,7 @@
     font-family: "Poppins", sans-serif;
     color: #5c67a7;
   }
-  .design-description p, .develop-description p {
+  .works-description p, .design-description p, .develop-description p {
     margin: 0 0 10px;
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
@@ -126,7 +126,7 @@
 }
 /*Tipografia para Mobile small*/
 @media (max-width: 767px) and (min-width: 400px) {
-  .design-description h3, .develop-description h3 {
+  .works-description h3, .design-description h3, .develop-description h3 {
     font-size: 1.5em;
     padding-bottom: 0.1em;
     padding-top: 1.1em;
@@ -135,7 +135,7 @@
     font-family: "Poppins", sans-serif;
     color: #5c67a7;
   }
-  .design-description p, .develop-description p {
+  .works-description p, .design-description p, .develop-description p {
     margin: 0 0 10px;
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
@@ -147,7 +147,7 @@
 }
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .design-description h3, .develop-description h3 {
+  .works-description h3, .design-description h3, .develop-description h3 {
     font-size: 1.8em;
     padding-bottom: 0.1em;
     padding-top: 1em;
@@ -156,7 +156,7 @@
     font-family: "Poppins", sans-serif;
     color: #5c67a7;
   }
-  .design-description p, .develop-description p {
+  .works-description p, .design-description p, .develop-description p {
     margin: 0 0 10px;
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
@@ -168,7 +168,7 @@
 }
 /*Escritorio*/
 @media only screen and (min-width: 992px) {
-  .design-description h3, .develop-description h3 {
+  .works-description h3, .design-description h3, .develop-description h3 {
     font-size: 1.8em;
     padding-bottom: 0.1em;
     text-align: left;
@@ -177,7 +177,7 @@
     font-family: "Poppins", sans-serif;
     color: #5c67a7;
   }
-  .design-description p, .develop-description p {
+  .works-description p, .design-description p, .develop-description p {
     margin: 0 0 10px;
     font-family: "Poppins", sans-serif;
     font-size: 1.3em;
@@ -257,10 +257,7 @@ a:link, a:visited, a:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
   background: url("../images/wood_1.png");
-  position: inherit;
-  top: 0;
-  left: 0;
-  z-index: 1030;
+  position: fixed;
   padding-top: 20px;
 }
 .header .ul {
@@ -272,10 +269,6 @@ a:link, a:visited, a:active {
   justify-content: right;
   align-items: center;
 }
-.header .navbar-nav {
-  padding-left: 13px;
-}
-
 .image__logo img {
   height: 70px;
   width: 80px;
@@ -294,6 +287,9 @@ a:link, a:visited, a:active {
 .footer {
   background: url("../images/wood_1.png");
   padding: 2em 0;
+}
+.footer .row {
+  margin: 0;
 }
 .footer p {
   padding: 2.5em 0;
@@ -335,7 +331,7 @@ a:link, a:visited, a:active {
 
 /*----Responsive*-------*/
 .contact-links {
-  background: #343a40;
+  background: url("../images/wood_1.png");
 }
 
 /*Col de enlaces*/
@@ -694,6 +690,64 @@ a:link, a:visited, a:active {
   font-weight: 200;
   font-family: "Poppins", sans-serif;
   color: #536dfeb8;
+}
+
+.works {
+  overflow: hidden;
+  background: #1F1F1F;
+  transform: translateZ(0);
+  color: #5c67a7;
+}
+.works h3 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 500;
+  padding: 2em;
+}
+.works p {
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.4em;
+}
+
+#portfolio {
+  /*     height: 1000px; */
+}
+#portfolio .container-fluid {
+  max-width: 1920px;
+}
+#portfolio .container-fluid .portfolio-box {
+  position: relative;
+  display: block;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  background: rgba(244, 98, 58, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
