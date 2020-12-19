@@ -257,7 +257,7 @@ a:link, a:visited, a:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
   background: url("../images/wood_1.png");
-  position: fixed;
+  position: relative;
   padding-top: 20px;
 }
 .header .ul {
@@ -269,6 +269,7 @@ a:link, a:visited, a:active {
   justify-content: right;
   align-items: center;
 }
+
 .image__logo img {
   height: 70px;
   width: 80px;
@@ -542,6 +543,10 @@ a:link, a:visited, a:active {
   box-shadow: 2px 2px 2px black;
 }
 
+.skills {
+  padding: 7em 0;
+}
+
 .what-i-do h1 {
   padding: 2em 0;
   font-size: 1.6em;
@@ -702,7 +707,7 @@ a:link, a:visited, a:active {
   text-align: center;
   font-size: 2.5em;
   font-weight: 500;
-  padding: 2em;
+  padding: 2em 0;
 }
 .works p {
   color: whitesmoke;
