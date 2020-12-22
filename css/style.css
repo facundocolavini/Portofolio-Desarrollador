@@ -68,6 +68,21 @@
     flex: none;
     max-width: 100%;
   }
+
+  .project .col-md-push {
+    left: 50%;
+  }
+  .project .col-md-pull {
+    right: 50%;
+  }
+  .project .col-md-4 {
+    flex: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+  }
+  .project .col-md-8 {
+    flex: none;
+    /*  max-width: 100%; */
+  }
 }
 /*Desktop*/
 @media only screen and (min-width: 992px) {
@@ -100,6 +115,13 @@
     left: 50%;
   }
   .develop .col-md-pull {
+    right: 50%;
+  }
+
+  .project .col-md-push {
+    left: 50%;
+  }
+  .project .col-md-pull {
     right: 50%;
   }
 }
@@ -243,7 +265,7 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /*  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
 }
 
 a:link, a:visited, a:active {
@@ -753,6 +775,628 @@ a:link, a:visited, a:active {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.project {
+  margin: 0 auto;
+}
+.project .container {
+  margin-left: 0 auto;
+}
+.project .container .row {
+  margin: 0 auto;
+}
+.project .container .row .intro {
+  object-fit: cover;
+}
+.project .container .row .intro__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: contain;
+  background-position: center;
+}
+.project .container .projects-descriptions {
+  background: #f3f2f1;
+  box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.project .container .projects-descriptions p {
+  font-family: "Poppins", sans-serif;
+}
+
+/*Tipografia para mobiles small to L*/
+@media (max-width: 399px) and (min-width: 300px) {
+  .title h3 {
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+    line-height: 1;
+    font-size: 2.5em;
+    padding-bottom: 1em;
+  }
+  .title h3 strong {
+    display: block;
+    font-weight: 700;
+  }
+
+  .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 1.2em;
+    text-align: left;
+    background: #536dfe;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    color: black;
+  }
+
+  .projects-descriptions p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    padding: 15px;
+    color: black;
+  }
+  .projects-descriptions .list-technology {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+  }
+  .projects-descriptions .list-technology li {
+    list-style: none;
+    padding: 5px;
+  }
+  .projects-descriptions .list-technology li img {
+    height: 36px;
+    width: 36px;
+  }
+  .projects-descriptions .p__subtitle p {
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+  }
+  .projects-descriptions p {
+    padding: 15px;
+  }
+  .projects-descriptions__box .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 1.2em;
+    color: black;
+    width: 100%;
+    font-weight: 400;
+  }
+  .projects-descriptions__box .p__subtitle p span {
+    display: block;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 50;
+    color: black;
+  }
+
+  .works-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px grey 0.1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    position: relative;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+    text-align: right;
+    height: 60px;
+    align-items: center;
+    padding-top: 0.8em;
+    padding-right: 0.9em;
+  }
+  .works-button .icon-git {
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    left: 5%;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    background-image: url("/icons/github.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .works-button .icon-project {
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    top: 8%;
+    bottom: 10%;
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/icons/link.svg");
+  }
+}
+/*Tipografia para Mobile small*/
+@media (max-width: 767px) and (min-width: 400px) {
+  .title h3 {
+    font-size: 1.5em;
+    padding-bottom: 0.1em;
+    padding-top: 1.1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+    line-height: 1;
+    font-size: 2.5em;
+    padding-bottom: 1em;
+  }
+  .title h3 strong {
+    display: block;
+    font-weight: 700;
+  }
+
+  .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 1.5em;
+    text-align: left;
+    background: #536dfe;
+    padding: 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    padding-left: 15px;
+    color: black;
+  }
+
+  .projects-descriptions p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    padding: 15px;
+    color: black;
+  }
+  .projects-descriptions .list-technology {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+  }
+  .projects-descriptions .list-technology li {
+    list-style: none;
+    padding: 5px;
+  }
+  .projects-descriptions .list-technology li img {
+    height: 50px;
+    width: 50px;
+  }
+  .projects-descriptions__box .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 1.7em;
+    color: black;
+    width: 100%;
+    font-weight: 400;
+  }
+  .projects-descriptions__box .p__subtitle p span {
+    display: block;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 400;
+    color: black;
+  }
+
+  .works-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px grey 0.1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    position: relative;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+    text-align: right;
+    height: 60px;
+    align-items: center;
+    padding-top: 0.8em;
+    padding-right: 0.9em;
+  }
+  .works-button .icon-git {
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    left: 5%;
+    bottom: 10%;
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    background-image: url("/icons/github.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .works-button .icon-project {
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    left: 5%;
+    bottom: 10%;
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/icons/link.svg");
+  }
+}
+/*Tablets*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .title h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+    text-align: left;
+    padding-top: 0;
+    font-size: 2.5em;
+  }
+  .title h3 strong {
+    display: block;
+    font-weight: 700;
+  }
+
+  .p__subtitle {
+    padding-top: 2em;
+  }
+  .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.8;
+    font-size: 1.5em;
+    text-align: left;
+    background: #536dfe;
+    padding: 1px;
+    font-weight: 500;
+    padding-left: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    color: black;
+  }
+
+  .projects-descriptions p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.8;
+    padding: 15px;
+    color: black;
+    text-align: left;
+  }
+  .projects-descriptions__box .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 1.5em;
+    color: black;
+    width: 100%;
+    font-weight: 500;
+  }
+  .projects-descriptions__box .p__subtitle p span {
+    display: block;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 400;
+    color: black;
+  }
+  .projects-descriptions .list-technology {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+  }
+  .projects-descriptions .list-technology li {
+    list-style: none;
+    padding: 5px;
+  }
+  .projects-descriptions .list-technology li img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .works-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px grey 0.1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    position: relative;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+    height: 60px;
+    align-items: center;
+    padding-left: 1em;
+    padding-top: 0.8em;
+    padding-right: 0.9em;
+  }
+  .works-button .icon-git {
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    left: 5%;
+    bottom: 10%;
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    background-image: url("/icons/github.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .works-button .icon-project {
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    left: 5%;
+    bottom: 10%;
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/icons/link.svg");
+  }
+}
+/*Escritorio*/
+@media only screen and (min-width: 992px) {
+  .title h3 {
+    font-size: 1.8em;
+    padding-bottom: 0.1em;
+    text-align: left;
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    color: #5c67a7;
+    text-align: left;
+    font-size: 4em;
+  }
+  .title h3 strong {
+    display: block;
+    font-weight: 700;
+  }
+
+  .p__subtitle {
+    padding-top: 2em;
+    margin: 0 auto;
+  }
+  .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 300;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 2em;
+    text-align: left;
+    background: #536dfe;
+    padding-left: 15px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    color: black;
+  }
+
+  .projects-descriptions p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    font-weight: 300;
+    color: #545454;
+    line-height: 1.7;
+    padding: 15px;
+    color: black;
+  }
+  .projects-descriptions__box .p__subtitle p {
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 2em;
+    color: black;
+    width: 100%;
+    font-weight: 500;
+  }
+  .projects-descriptions__box .p__subtitle p span {
+    display: block;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+    color: #545454;
+    line-height: 1.7;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 300;
+    color: black;
+  }
+  .projects-descriptions .list-technology {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+  }
+  .projects-descriptions .list-technology li {
+    list-style: none;
+    padding: 5px;
+  }
+  .projects-descriptions .list-technology li img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .works-button {
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px 0px, rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 1px 1px grey 0.1;
+    background-color: #536DFE;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    position: relative;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+    height: 60px;
+    align-items: center;
+    padding-left: 1em;
+    padding-top: 0.8em;
+    padding-right: 0.9em;
+  }
+  .works-button .icon-git {
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    left: 5%;
+    bottom: 10%;
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    background-image: url("../icons/github.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .works-button .icon-project {
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    left: 5%;
+    bottom: 10%;
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../icons/link.svg");
+  }
+}
+.works-button:hover {
+  background-color: #536dfea1;
+  color: rgba(0, 0, 0, 0.877);
+  text-shadow: none;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

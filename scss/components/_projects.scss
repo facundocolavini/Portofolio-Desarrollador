@@ -1,0 +1,582 @@
+.project{
+    margin: 0 auto;
+    .container{
+        margin-left:0 auto;
+        .row{
+            margin:0 auto;
+            .intro{ 
+                object-fit: cover;
+                
+                &__img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    background-size: contain;
+                    background-position: center;
+                }
+            }
+ 
+        }
+        .projects-descriptions{
+            background: #f3f2f1;
+            box-shadow:$box-s;
+            text-align: center;
+            font-family: $basefont;
+            p{
+                font-family: $basefont;
+             
+            }
+         
+
+        }
+
+    }
+}
+
+
+  /*Tipografia para mobiles small to L*/
+  @media (max-width: 399px) and (min-width: 300px){
+    .title{         
+        h3{
+            @include mobile-s-h;
+            line-height: 1;
+            font-size: 2.5em;
+            padding-bottom: 1.0em;
+            strong{
+                display: block;
+                font-weight: 700;
+            }
+            
+        }
+    }
+    .p__subtitle{
+        p{
+            @include mobile-s-p;
+            font-size: 1.2em;
+            text-align: left;
+            background: rgb(83, 109, 254);
+            padding:8px;
+            box-shadow:$box-s;
+            color:black;
+        }
+    }
+
+    .projects-descriptions{
+        p{
+            @include mobile-s-p;
+            text-align:left;
+            padding: 15px;
+            color:black;
+ 
+        }
+        .list-technology{
+            display: flex;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding:2em 0;
+            li{
+                list-style: none;
+                padding: 5px;
+
+                img{
+                    height: 36px;
+                    width: 36px;
+                }
+                
+            }
+        }
+        .p__subtitle{
+            p{
+                font-family: $basefont;
+                text-align: left;
+            }
+
+        }
+        p{
+            padding: 15px;
+        }
+        
+        &__box{
+            .p__subtitle{
+                p{
+                    @include mobile-s-p;
+                    text-align: left;
+                    font-size: 1.2em;
+                    color:black;
+                    width: 100%;
+                    font-weight:400;
+                    span{
+                        display: block;
+                        @include mobile-s-p;
+                        font-size: 1rem;
+                        text-align: left;
+                        font-weight:50;
+                        
+                        color:black;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .works-button{
+        box-shadow: $box-s;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline:none;
+        box-shadow: 1px 1px  grey  .1;
+        background-color:#536DFE;
+        font-family: $basefont;
+        font-weight: 400;
+        margin-top: 5px;
+        position: relative;
+        border:0;
+        width: 100%;
+        color:black;
+        font-size: 1.2em;
+        text-align: right;
+        height: 60px;
+        align-items: center;
+        padding-top: 0.8em;
+        padding-right: .9em;
+        .icon-git{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:0%;
+            
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+            background-image: url('/icons/github.svg');
+            background-repeat: no-repeat;
+            background-size: contain;   
+        }
+        .icon-project{
+            position: absolute;
+            text-align: center;
+            left: 5%;
+            top:8%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+ 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-image: url('/icons/link.svg');
+        
+        }
+
+    }
+ }
+
+ /*Tipografia para Mobile small*/
+ @media (max-width: 767px) and (min-width:400px ){
+    .title{   
+        h3{
+            @include mobile-m-l-h;
+            line-height: 1;
+            font-size: 2.5em;
+            padding-bottom: 1.0em;
+            strong{
+                display: block;
+                font-weight: 700;
+            }
+        }
+    }
+    .p__subtitle{
+        p{
+            @include mobile-m-l-p;
+            font-size: 1.5em;
+            text-align: left;
+            background: rgb(83, 109, 254);
+            padding:1px;
+            box-shadow:$box-s;
+            padding-left:15px;
+            color:black;
+        }
+    }
+    .projects-descriptions{
+        p{
+            @include mobile-m-l-p;
+            text-align:left;
+            padding: 15px;
+            color:black;
+ 
+        }
+        .list-technology{
+            display: flex;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding:2em 0;
+            li{
+                list-style: none;
+                padding: 5px;
+
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
+                
+            }
+        }
+        &__box{
+            .p__subtitle{
+                p{
+                    @include mobile-s-p;
+                    text-align: left;
+                    font-size: 1.7em;
+                    color:black;
+                    width: 100%;
+                    font-weight:400;
+                    span{
+                        display: block;
+                        @include mobile-s-p;
+                        font-size: 1.2rem;
+                        text-align: left;
+                        font-weight:400;
+                        
+                        color:black;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+    .works-button{
+        box-shadow: $box-s;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline:none;
+        box-shadow: 1px 1px  grey  .1;
+        background-color:#536DFE;
+        font-family: $basefont;
+        font-weight: 400;
+        margin-top: 5px;
+        position: relative;
+        border:0;
+        width: 100%;
+        color:black;
+        font-size: 1.2em;
+        text-align: right;
+        height: 60px;
+        align-items: center;
+        padding-top: 0.8em;
+        padding-right: .9em;
+        .icon-git{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+            background-image: url('/icons/github.svg');
+            background-repeat: no-repeat;
+            background-size: contain;   
+        }
+        .icon-project{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+ 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-image: url('/icons/link.svg');
+        
+        }
+    }
+ }
+ /*Tablets*/
+ @media  (min-width:768px) and (max-width: 991px){
+    .title{ 
+        h3{
+            @include tablet-h;
+            text-align: left;
+            padding-top:0;
+            font-size: 2.5em;
+            strong{
+                display: block;
+                font-weight: 700;
+            }
+        }
+
+    }
+    .p__subtitle{
+        padding-top: 2em;
+      
+        p{          
+            @include tablet-p;
+            font-size: 1.5em;
+            text-align: left;
+            background: rgb(83, 109, 254);
+            padding:1px;
+            font-weight: 500;
+            padding-left:15px;
+            box-shadow:$box-s;
+            color:black;
+        }
+    }
+
+    .projects-descriptions{
+       p{
+            @include tablet-p;
+            padding:15px;
+            color:black;
+            text-align: left;
+        }
+
+        &__box{
+            .p__subtitle{
+                p{
+                    @include mobile-s-p;
+                    text-align: left;
+                    font-size: 1.5em;
+                    color:black;
+                    width: 100%;
+                    font-weight:500;
+                    span{
+                        display: block;
+                        @include mobile-s-p;
+                        font-size: 1.2rem;
+                        text-align: left;
+                        font-weight:400;
+                        
+                        color:black;
+                    }
+                    
+                }
+            }
+        }
+        .list-technology{
+            display: flex;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding:2em 0;
+            li{
+                list-style: none;
+                padding: 5px;
+
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
+                
+            }
+        }
+
+    }
+    .works-button{
+        box-shadow: $box-s;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline:none;
+        box-shadow: 1px 1px  grey  .1;
+        background-color:#536DFE;
+        font-family: $basefont;
+        font-weight: 400;
+        margin-top: 5px;
+        position: relative;
+        border:0;
+        width: 100%;
+        color:black;
+        font-size: 1.2em;
+        text-align: center;
+        height: 60px;
+        align-items: center;
+        padding-left: 1em;
+        padding-top: 0.8em;
+        padding-right: .9em;
+        .icon-git{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+            background-image: url('/icons/github.svg');
+            background-repeat: no-repeat;
+            background-size: contain;   
+        }
+        .icon-project{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+ 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-image: url('/icons/link.svg');
+        
+        }
+    }
+ }
+
+ /*Escritorio*/
+ @include media(desktop-s){
+    .title{
+       
+        h3{
+            @include desktop-h;
+            text-align: left;
+            font-size: 4em;
+            strong{
+                display: block;
+                font-weight: 700;
+            }
+        }
+    }
+    .p__subtitle{
+        padding-top: 2em;
+        margin:0 auto;
+        p{
+            @include desktop-p;
+            font-size: 2em;
+            text-align: left;
+            background: rgb(83, 109, 254);
+            padding-left:15px;
+            font-weight: 500;
+            box-shadow:$box-s;
+            color:black;
+     
+        }
+    }
+    .projects-descriptions{
+        p{
+            @include desktop-p;
+            padding: 15px;
+            color:black;
+        }
+
+        &__box{
+            .p__subtitle{
+                p{
+                    @include mobile-s-p;
+                    text-align: left;
+                    font-size: 2em;
+                    color:black;
+                    width: 100%;
+                    font-weight:500;
+                    span{
+                        display: block;
+                        @include mobile-s-p;
+                        font-size: 1.3rem;
+                        text-align: left;
+                        font-weight:300;
+                        
+                        color:black;
+                    }
+                    
+                }
+            }
+        }
+
+        .list-technology{
+            display: flex;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding:2em 0;
+            li{
+                list-style: none;
+                padding: 5px;
+
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
+                
+            }
+        }
+    }
+    .works-button{
+        box-shadow: $box-s;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline:none;
+        box-shadow: 1px 1px  grey  .1;
+        background-color:#536DFE;
+        font-family: $basefont;
+        font-weight: 400;
+        margin-top: 5px;
+        position: relative;
+        border:0;
+        width: 100%;
+        color:black;
+        font-size: 1.2em;
+        text-align: center;
+        height: 60px;
+        align-items: center;
+        padding-left: 1em;
+        padding-top: 0.8em;
+        padding-right: .9em;
+        .icon-git{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+            background-image: url('../icons/github.svg');
+            background-repeat: no-repeat;
+            background-size: contain;   
+        }
+        .icon-project{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+ 
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-image: url('../icons/link.svg');
+        
+        }
+    }
+ 
+ }
+
+
+.works-button:hover{
+    background-color:$color-btn-hover;
+    color:rgba(0, 0, 0, 0.877);
+    text-shadow: none;
+    outline:none;
+    
+}
