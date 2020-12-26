@@ -40,7 +40,7 @@
                 opacity: 0;
                 
                 color: $white;
-                background: fade-out($primary, 0.1);
+                background: fade-out(rgb(92, 103, 167), 0.1);
                 transition: opacity 0.25s ease;
                 text-align: center;
                 .project-category {

@@ -233,55 +233,192 @@
   }
 }
 /*Styleguide*/
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
+* {
   margin: 0;
-  /*  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+  box-sizing: content-box;
+  padding: 0;
 }
 
-a:link, a:visited, a:active {
-  text-decoration: none;
+.container {
+  overflow-x: hidden;
 }
 
 /**
 * Componets used for layouts, headers, articles, etc...
 **/
-.header {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+/*  .header{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    background: $background-page;
+    position: relative;
+
+    padding-top: 20px;
+
+    .ul{
+        display: flex;
+        justify-content: right;
+    }
+    .row{
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+    }
+
+}
+
+
+.image__logo{
+    img{
+        height: 70px;
+        width: 80px;
+        padding: 10px;
+        margin-left: 20px;
+        background-position: center;
+        background-size: contain;
+        border-radius:23px;
+        background-repeat: no-repeat;
+    }
+}
+
+.nav-link{
+    font-family: $basefont;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  height: 10vh;
   background: url("../images/wood_1.png");
-  position: relative;
-  padding-top: 20px;
+  z-index: 1;
 }
-.header .ul {
+
+.nav-links {
+  position: sticky;
   display: flex;
-  justify-content: right;
+  list-style: none;
+  width: 65%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 2em;
 }
-.header .row {
-  width: 100%;
-  justify-content: right;
+
+.nav-links li a:hover {
+  color: #536dfe83;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 1;
+  padding-right: 1em;
+  margin-right: 2em;
+}
+
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.image__logo img {
-  height: 70px;
-  width: 80px;
-  padding: 10px;
-  margin-left: 20px;
-  background-position: center;
-  background-size: contain;
-  border-radius: 23px;
-  background-repeat: no-repeat;
+.landing h1 {
+  margin: 100px;
+  font-size: 50px;
+  color: #ae5fce;
 }
 
-.nav-link {
-  font-family: "Poppins", sans-serif;
-}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
 
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #536dfe;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -30%);
+    -webkit-clip-path: circle(100px at 90% -30%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1210px at 90% -20%);
+    -webkit-clip-path: circle(1210px at 90% -20%);
+    pointer-events: all;
+  }
+
+  .landing {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links li a {
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .nav-links li a:hover {
+    color: rgba(0, 0, 0, 0.658);
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+    opacity: 1;
+  }
+
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+    opacity: 1;
+  }
+
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+    opacity: 1;
+  }
+
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+    opacity: 1;
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+}
 .footer {
   background: url("../images/wood_1.png");
   padding: 2em 0;
@@ -682,6 +819,7 @@ a:link, a:visited, a:active {
   font-weight: 600;
   font-size: 4em;
   color: #536dfeb8;
+  overflow: hidden;
 }
 .im-facundo h4 {
   padding: 0.5em 0 0;
@@ -735,7 +873,7 @@ a:link, a:visited, a:active {
   text-align: center;
   opacity: 0;
   color: white;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(92, 103, 167, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -1165,7 +1303,7 @@ a:link, a:visited, a:active {
   }
   .projects-descriptions .list-technology li {
     list-style: none;
-    padding: 5px;
+    padding: 15px;
   }
   .projects-descriptions .list-technology li img {
     height: 50px;
@@ -1311,7 +1449,7 @@ a:link, a:visited, a:active {
   }
   .projects-descriptions .list-technology li {
     list-style: none;
-    padding: 5px;
+    padding: 15px;
   }
   .projects-descriptions .list-technology li img {
     height: 50px;
