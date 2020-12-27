@@ -311,7 +311,7 @@
             @include tablet-h;
             text-align: left;
             padding-top:0;
-            font-size: 2.5em;
+            font-size: 2em;
             strong{
                 display: block;
                 font-weight: 700;
@@ -446,7 +446,10 @@
         h3{
             @include desktop-h;
             text-align: left;
-            font-size: 4em;
+            font-size: 3em;
+            padding-right:4em;
+            align-self: center;
+            width:auto;
             strong{
                 display: block;
                 font-weight: 700;
