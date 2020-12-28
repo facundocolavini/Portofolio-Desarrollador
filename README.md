@@ -28,8 +28,8 @@ Portfolio Desarrollador Web
 
 # Herramientas implementadas 
 
-  ▬ #Bootstrap 4.5 
+  ##Bootstrap 4.5 
 
-  ▬ #Bootstrap 4.5 
+  ##Bootstrap 4.5 
 
-  ▬ #SASS/SCSS 
+  ##SASS/SCSS 
