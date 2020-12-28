@@ -1,4 +1,4 @@
-Portfolio Desarrollador Web 
+# Portfolio Desarrollador Web 
 
   Este proyecto es para dar vida a mi Portfolio personal y tener todos mis trabajos en un mismo sitio. 
 
@@ -12,24 +12,24 @@ Portfolio Desarrollador Web
 
   Tamaños adaptativos: 
 
-     #### Mobile S 
+   #### Mobile S 
 
-     #### Mobile M 
+   #### Mobile M 
 
-     #### Mobile L  
+   #### Mobile L  
 
-     #### Tablet 
+   #### Tablet 
 
-     #### Laptop 
+   #### Laptop 
 
-     #### Desktop 
+   #### Desktop 
 
    
 
 # Herramientas implementadas 
 
-    ### Bootstrap 4.5 
+  ### Bootstrap 4.5 
 
-    ### JavaScript 
+  ### JavaScript 
 
-    ### SASS/SCSS 
+  ### SASS/SCSS 
