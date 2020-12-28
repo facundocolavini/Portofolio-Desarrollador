@@ -1,7 +1,35 @@
-# Portofolio-Desarrollador
- Este proyecto es para dar vida a mi Portofolio personal y tener todos mis trabajos en un mismo sitio.
- Para esta practica tome el Framework Bootstraps y mediante el preprocesador SASS manipule sus estilos.
+Portfolio Desarrollador Web 
 
-# Herramientas implementadas
-▬ #Bootstrap 4.5
-▬ #SASS/SCSS
+  Este proyecto es para dar vida a mi Portfolio personal y tener todos mis trabajos en un mismo sitio. 
+
+  Para esta práctica tome el Framework Bootstrap y mediante el preprocesador SASS manipule sus estilos. También combine un poco de JavaScript para darle funcionalidad al menú. 
+
+  
+
+# Responsive Design  
+
+  Adaptado para dispositivos con resoluciones inferiores y resoluciones más grandes como Tablet. 
+
+  Tamaños adaptativos: 
+
+   ▬Mobile S 
+
+   ▬Mobile M 
+
+   ▬Mobile L  
+
+   ▬Tablet 
+
+   ▬Laptop 
+
+   ▬Desktop 
+
+   
+
+# Herramientas implementadas 
+
+  ▬ #Bootstrap 4.5 
+
+  ▬ #Bootstrap 4.5 
+
+  ▬ #SASS/SCSS 
