@@ -28,7 +28,6 @@
     }
 }
 
-
   /*Tipografia para mobiles small to L - section projects*/
   @media (max-width: 399px) and (min-width: 300px){
     .title{         
@@ -117,6 +116,34 @@
 
     .works-button{
         @include Button-works;
+        .icon-git{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+            background-image: url('/icons/github.svg');
+            background-repeat: no-repeat;
+            background-size: contain;   
+        }
+        .icon-project{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+    
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-image: url('/icons/link.svg');
+        
+        }
     }
  }
 
@@ -199,7 +226,34 @@
     }
     .works-button{
         @include Button-works;
-
+        .icon-git{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+            background-image: url('/icons/github.svg');
+            background-repeat: no-repeat;
+            background-size: contain;   
+        }
+        .icon-project{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+    
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-image: url('/icons/link.svg');
+        
+        }
     }
  }
  /*Tablets - section projects*/
@@ -283,6 +337,34 @@
     }
     .works-button{
         @include Button-works;
+        .icon-git{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+            background-image: url('/icons/github.svg');
+            background-repeat: no-repeat;
+            background-size: contain;   
+        }
+        .icon-project{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+    
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-image: url('/icons/link.svg');
+        
+        }
     }
  }
 
@@ -371,6 +453,34 @@
     }
     .works-button{
         @include Button-works;
+        .icon-git{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+            background-image: url('/icons/github.svg');
+            background-repeat: no-repeat;
+            background-size: contain;   
+        }
+        .icon-project{
+            position: absolute;
+            text-align: center;
+            top:8%;
+            left: 5%;
+            bottom:10%;
+            height: 50px;
+            width: 50px;
+            padding: 1em;
+    
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-image: url('/icons/link.svg');
+        
+        }
     }
  
  }

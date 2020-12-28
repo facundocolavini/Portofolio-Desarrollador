@@ -60,35 +60,7 @@
     align-items: center;
     padding-top: 0.8em;
     padding-right: .9em;
-    .icon-git{
-        position: absolute;
-        text-align: center;
-        top:8%;
-        left: 5%;
-        bottom:10%;
-        height: 50px;
-        width: 50px;
-        padding: 1em;
-   
-        background-image: url('icons/github-logo.png');
-        background-repeat: no-repeat;
-        background-size: contain;   
-    }
-    .icon-project{
-        position: absolute;
-        text-align: center;
-        top:8%;
-        left: 5%;
-        bottom:10%;
-        height: 50px;
-        width: 50px;
-        padding: 1em;
 
-        background-repeat: no-repeat;
-        background-size: contain; 
-        background-image: url('icons/link.svg');
-    
-    }
 
     .works-button:hover{
         background-color:$color-btn-hover;

@@ -999,6 +999,12 @@ nav {
     padding-top: 0.8em;
     padding-right: 0.9em;
   }
+  .works-button .works-button:hover {
+    background-color: #536dfea1;
+    color: rgba(0, 0, 0, 0.877);
+    text-shadow: none;
+    outline: none;
+  }
   .works-button .icon-git {
     position: absolute;
     text-align: center;
@@ -1024,12 +1030,6 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("/icons/link.svg");
-  }
-  .works-button .works-button:hover {
-    background-color: #536dfea1;
-    color: rgba(0, 0, 0, 0.877);
-    text-shadow: none;
-    outline: none;
   }
 }
 /*Tipografia para Mobile small - section projects*/
@@ -1148,6 +1148,12 @@ nav {
     padding-top: 0.8em;
     padding-right: 0.9em;
   }
+  .works-button .works-button:hover {
+    background-color: #536dfea1;
+    color: rgba(0, 0, 0, 0.877);
+    text-shadow: none;
+    outline: none;
+  }
   .works-button .icon-git {
     position: absolute;
     text-align: center;
@@ -1173,12 +1179,6 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("/icons/link.svg");
-  }
-  .works-button .works-button:hover {
-    background-color: #536dfea1;
-    color: rgba(0, 0, 0, 0.877);
-    text-shadow: none;
-    outline: none;
   }
 }
 /*Tablets - section projects*/
@@ -1301,6 +1301,12 @@ nav {
     padding-top: 0.8em;
     padding-right: 0.9em;
   }
+  .works-button .works-button:hover {
+    background-color: #536dfea1;
+    color: rgba(0, 0, 0, 0.877);
+    text-shadow: none;
+    outline: none;
+  }
   .works-button .icon-git {
     position: absolute;
     text-align: center;
@@ -1326,12 +1332,6 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("/icons/link.svg");
-  }
-  .works-button .works-button:hover {
-    background-color: #536dfea1;
-    color: rgba(0, 0, 0, 0.877);
-    text-shadow: none;
-    outline: none;
   }
 }
 /*Escritorio - section projects*/
@@ -1455,6 +1455,12 @@ nav {
     padding-top: 0.8em;
     padding-right: 0.9em;
   }
+  .works-button .works-button:hover {
+    background-color: #536dfea1;
+    color: rgba(0, 0, 0, 0.877);
+    text-shadow: none;
+    outline: none;
+  }
   .works-button .icon-git {
     position: absolute;
     text-align: center;
@@ -1480,12 +1486,6 @@ nav {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("/icons/link.svg");
-  }
-  .works-button .works-button:hover {
-    background-color: #536dfea1;
-    color: rgba(0, 0, 0, 0.877);
-    text-shadow: none;
-    outline: none;
   }
 }
 .works-button:hover {
