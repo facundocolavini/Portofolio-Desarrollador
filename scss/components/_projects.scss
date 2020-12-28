@@ -15,7 +15,6 @@
                     background-position: center;
                 }
             }
- 
         }
         .projects-descriptions{
             background: #f3f2f1;
@@ -24,17 +23,13 @@
             font-family: $basefont;
             p{
                 font-family: $basefont;
-             
             }
-         
-
         }
-
     }
 }
 
 
-  /*Tipografia para mobiles small to L*/
+  /*Tipografia para mobiles small to L - section projects*/
   @media (max-width: 399px) and (min-width: 300px){
     .title{         
         h3{
@@ -86,7 +81,6 @@
                     height: 36px;
                     width: 36px;
                 }
-                
             }
         }
         .p__subtitle{
@@ -94,12 +88,10 @@
                 font-family: $basefont;
                 text-align: left;
             }
-
         }
         p{
             padding: 15px;
         }
-        
         &__box{
             .p__subtitle{
                 p{
@@ -118,65 +110,17 @@
                         
                         color:black;
                     }
-                    
                 }
             }
         }
     }
-    .works-button{
-        box-shadow: $box-s;
-        text-decoration: none;
-        text-transform: uppercase;
-        outline:none;
-        box-shadow: 1px 1px  grey  .1;
-        background-color:#536DFE;
-        font-family: $basefont;
-        font-weight: 400;
-        margin-top: 5px;
-        position: relative;
-        border:0;
-        width: 100%;
-        color:black;
-        font-size: 1.2em;
-        text-align: right;
-        height: 60px;
-        align-items: center;
-        padding-top: 0.8em;
-        padding-right: .9em;
-        .icon-git{
-            position: absolute;
-            text-align: center;
-            top:8%;
-            left: 5%;
-            bottom:0%;
-            
-            height: 50px;
-            width: 50px;
-            padding: 1em;
-            background-image: url('/icons/github.svg');
-            background-repeat: no-repeat;
-            background-size: contain;   
-        }
-        .icon-project{
-            position: absolute;
-            text-align: center;
-            left: 5%;
-            top:8%;
-            bottom:10%;
-            height: 50px;
-            width: 50px;
-            padding: 1em;
- 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            background-image: url('/icons/link.svg');
-        
-        }
 
+    .works-button{
+        @include Button-works;
     }
  }
 
- /*Tipografia para Mobile small*/
+ /*Tipografia para Mobile small - section projects*/
  @media (max-width: 767px) and (min-width:400px ){
     .title{   
         h3{
@@ -247,64 +191,18 @@
                         font-weight:400;
                         
                         color:black;
-                    }
-                    
+                    }  
                 }
             }
         }
 
     }
     .works-button{
-        box-shadow: $box-s;
-        text-decoration: none;
-        text-transform: uppercase;
-        outline:none;
-        box-shadow: 1px 1px  grey  .1;
-        background-color:#536DFE;
-        font-family: $basefont;
-        font-weight: 400;
-        margin-top: 5px;
-        position: relative;
-        border:0;
-        width: 100%;
-        color:black;
-        font-size: 1.2em;
-        text-align: right;
-        height: 60px;
-        align-items: center;
-        padding-top: 0.8em;
-        padding-right: .9em;
-        .icon-git{
-            position: absolute;
-            text-align: center;
-            top:8%;
-            left: 5%;
-            bottom:10%;
-            height: 50px;
-            width: 50px;
-            padding: 1em;
-            background-image: url('/icons/github.svg');
-            background-repeat: no-repeat;
-            background-size: contain;   
-        }
-        .icon-project{
-            position: absolute;
-            text-align: center;
-            top:8%;
-            left: 5%;
-            bottom:10%;
-            height: 50px;
-            width: 50px;
-            padding: 1em;
- 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            background-image: url('/icons/link.svg');
-        
-        }
+        @include Button-works;
+
     }
  }
- /*Tablets*/
+ /*Tablets - section projects*/
  @media  (min-width:768px) and (max-width: 991px){
     .title{ 
         h3{
@@ -317,11 +215,9 @@
                 font-weight: 700;
             }
         }
-
     }
     .p__subtitle{
         padding-top: 2em;
-      
         p{          
             @include tablet-p;
             font-size: 1.5em;
@@ -358,7 +254,6 @@
                         font-size: 1.2rem;
                         text-align: left;
                         font-weight:400;
-                        
                         color:black;
                     }
                     
@@ -382,64 +277,16 @@
                     height: 50px;
                     width: 50px;
                 }
-                
             }
         }
 
     }
     .works-button{
-        box-shadow: $box-s;
-        text-decoration: none;
-        text-transform: uppercase;
-        outline:none;
-        box-shadow: 1px 1px  grey  .1;
-        background-color:#536DFE;
-        font-family: $basefont;
-        font-weight: 400;
-        margin-top: 5px;
-        position: relative;
-        border:0;
-        width: 100%;
-        color:black;
-        font-size: 1.2em;
-        text-align: center;
-        height: 60px;
-        align-items: center;
-        padding-left: 1em;
-        padding-top: 0.8em;
-        padding-right: .9em;
-        .icon-git{
-            position: absolute;
-            text-align: center;
-            top:8%;
-            left: 5%;
-            bottom:10%;
-            height: 50px;
-            width: 50px;
-            padding: 1em;
-            background-image: url('/icons/github.svg');
-            background-repeat: no-repeat;
-            background-size: contain;   
-        }
-        .icon-project{
-            position: absolute;
-            text-align: center;
-            top:8%;
-            left: 5%;
-            bottom:10%;
-            height: 50px;
-            width: 50px;
-            padding: 1em;
- 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            background-image: url('/icons/link.svg');
-        
-        }
+        @include Button-works;
     }
  }
 
- /*Escritorio*/
+ /*Escritorio - section projects*/
  @include media(desktop-s){
     .title{
        
@@ -523,58 +370,10 @@
         }
     }
     .works-button{
-        box-shadow: $box-s;
-        text-decoration: none;
-        text-transform: uppercase;
-        outline:none;
-        box-shadow: 1px 1px  grey  .1;
-        background-color:#536DFE;
-        font-family: $basefont;
-        font-weight: 400;
-        margin-top: 5px;
-        position: relative;
-        border:0;
-        width: 100%;
-        color:black;
-        font-size: 1.2em;
-        text-align: center;
-        height: 60px;
-        align-items: center;
-        padding-left: 1em;
-        padding-top: 0.8em;
-        padding-right: .9em;
-        .icon-git{
-            position: absolute;
-            text-align: center;
-            top:8%;
-            left: 5%;
-            bottom:10%;
-            height: 50px;
-            width: 50px;
-            padding: 1em;
-            background-image: url('../icons/github.svg');
-            background-repeat: no-repeat;
-            background-size: contain;   
-        }
-        .icon-project{
-            position: absolute;
-            text-align: center;
-            top:8%;
-            left: 5%;
-            bottom:10%;
-            height: 50px;
-            width: 50px;
-            padding: 1em;
- 
-            background-repeat: no-repeat;
-            background-size: contain; 
-            background-image: url('../icons/link.svg');
-        
-        }
+        @include Button-works;
     }
  
  }
-
 
 .works-button:hover{
     background-color:$color-btn-hover;

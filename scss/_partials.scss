@@ -2,13 +2,10 @@
 /*------------------------------------*\
     $PARTIALS
 \*------------------------------------*/
-/**
- * All files to be compiled
- */
-
-/**
-* Scss Libraries, mixins, functions and any Scss focused logic
-**/
+ 
+/*
+ * Scss Libraries, mixins, functions and any Scss focused logic
+*/
  
 
 @import "lib/settings";
@@ -16,12 +13,13 @@
 @import "lib/mixins";
 @import "lib/media";
 @import "lib/animations";
+
 /*Styleguide*/
 @import "styleguide/styleguide";
 
-/**
+/*
 * Componets used for layouts, headers, articles, etc...
-**/
+*/
 
 @import "components/header";
 @import "components/footer";
