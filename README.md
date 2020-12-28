@@ -12,17 +12,17 @@ Portfolio Desarrollador Web
 
   Tamaños adaptativos: 
 
-   ▬ Mobile S 
+   #### Mobile S 
 
-   ▬Mobile M 
+   #### Mobile M 
 
-   ▬Mobile L  
+   #### Mobile L  
 
-   ▬Tablet 
+   #### Tablet 
 
-   ▬Laptop 
+   #### Laptop 
 
-   ▬Desktop 
+   #### Desktop 
 
    
 
@@ -30,6 +30,6 @@ Portfolio Desarrollador Web
 
   ### Bootstrap 4.5 
 
-  ### Bootstrap 4.5 
+  ### JavaScript 
 
   ### SASS/SCSS 
